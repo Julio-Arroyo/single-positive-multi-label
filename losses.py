@@ -21,6 +21,10 @@ def expected_positive_regularizer(preds, expected_num_pos, norm='2'):
     else:
         raise NotImplementedError
     return reg
+
+
+def entropy(alpha, f_cn):
+    return -(f_cn*torch.log(f_cn) + (1-f_cn) * torch.log(1 - f_cn))
     
 
 '''
@@ -185,6 +189,24 @@ def loss_role(batch, P, Z):
     
     return loss_mtx, reg_loss
 
+
+def loss_em(batch, P, Z):
+    """Entropy maximization loss from Zhou et al. (2022)"""
+    alpha = 1.0
+    preds = batch['preds']
+    observed_labels = batch['label_vec_obs']
+
+    # input validation: 
+    assert torch.min(observed_labels) >= 0
+
+    # compute loss:
+    loss_mtx = torch.zeros_like(observed_labels)
+    loss_mtx[observed_labels == 1] = neg_log(preds[observed_labels == 1])
+    loss_mtx[observed_labels == 0] = entropy(alpha, preds[observed_labels == 0])
+    reg_loss = None
+    return loss_mtx, reg_loss
+
+
 loss_functions = {
     'bce': loss_bce,
     'bce_ls': loss_bce_ls,
@@ -196,6 +218,7 @@ loss_functions = {
     'wan': loss_wan,
     'epr': loss_epr,
     'role': loss_role,
+    'em': loss_em
 }
 
 '''
