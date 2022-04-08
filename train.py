@@ -236,7 +236,8 @@ if __name__ == '__main__':
             'pascal': 1.5,
             'coco': 2.9,
             'nuswide': 1.9,
-            'cub': 31.4
+            'cub': 31.4,
+            'iNat21': 1.2  # MADE-UP NUMBER, IT'S UNKOWN YET
         },
         'linear_init_params': { # best learning rate and batch size for linear_fixed_features phase of linear_init
             'an_ls': {
@@ -257,8 +258,8 @@ if __name__ == '__main__':
     P = {}
     
     # Top-level parameters:
-    P['dataset'] = 'nuswide' # pascal, coco, nuswide, cub
-    P['loss'] = 'role' # bce, bce_ls, iun, iu, pr, an, an_ls, wan, epr, role
+    P['dataset'] = 'iNat21' # pascal, coco, nuswide, cub, iNat21
+    P['loss'] = 'an_ls' # bce, bce_ls, iun, iu, pr, an, an_ls, wan, epr, role
     P['train_mode'] = 'linear_init' # linear_fixed_features, end_to_end, linear_init
     P['val_set_variant'] = 'clean' # clean, observed
     
@@ -283,6 +284,7 @@ if __name__ == '__main__':
 
     # Dataset parameters:
     P['split_seed'] = 1200 # seed for train / val splitting
+    # TODO: frac below should be zero, right? iNat21 is already split
     P['val_frac'] = 0.2 # fraction of train set to split off for val
     P['ss_seed'] = 999 # seed for subsampling
     P['ss_frac_train'] = 1.0 # fraction of training set to subsample
@@ -367,4 +369,3 @@ if __name__ == '__main__':
     print('- batch size:    {}'.format(best_params['bsize']))
     print('- val score:     {}'.format(best_val_score))
     print('- test score:    {}'.format(best_test_score))
-    

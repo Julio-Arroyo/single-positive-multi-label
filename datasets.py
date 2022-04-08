@@ -32,9 +32,16 @@ def get_metadata(dataset_name):
             'path_to_dataset': 'data/cub',
             'path_to_images': 'data/cub/CUB_200_2011/CUB_200_2011/images'
         }
+    elif dataset_name == 'iNat21':
+        meta = {
+            'num_classes': 10000,
+            'path_to_dataset': 'data/iNat21',
+            'path_to_images': 'data/iNat21/images'
+        }
     else:
         raise NotImplementedError('Metadata dictionary not implemented.')
     return meta
+
 
 def get_imagenet_stats():
     '''
@@ -45,6 +52,7 @@ def get_imagenet_stats():
     imagenet_std = [0.229, 0.224, 0.225]
     
     return (imagenet_mean, imagenet_std)
+
 
 def get_transforms():
     '''
@@ -99,17 +107,18 @@ def get_data(P):
     # define transforms:
     tx = get_transforms()
     
-    # select and return the right dataset:
-    if P['dataset'] == 'coco':
-        ds = multilabel(P, tx).get_datasets()
-    elif P['dataset'] == 'pascal':
-        ds = multilabel(P, tx).get_datasets()
-    elif P['dataset'] == 'nuswide':
-        ds = multilabel(P, tx).get_datasets()
-    elif P['dataset'] == 'cub':
-        ds = multilabel(P, tx).get_datasets()
-    else:
-        raise ValueError('Unknown dataset.')
+    # # select and return the right dataset:
+    # if P['dataset'] == 'coco':
+    #     ds = multilabel(P, tx).get_datasets()
+    # elif P['dataset'] == 'pascal':
+    #     ds = multilabel(P, tx).get_datasets()
+    # elif P['dataset'] == 'nuswide':
+    #     ds = multilabel(P, tx).get_datasets()
+    # elif P['dataset'] == 'cub':
+    #     ds = multilabel(P, tx).get_datasets()
+    # else:
+    #     raise ValueError('Unknown dataset.')
+    ds = multilabel(P, tx).get_datasets()
     
     # Optionally overwrite the observed training labels with clean labels:
     assert P['train_set_variant'] in ['clean', 'observed']
@@ -132,6 +141,7 @@ def get_data(P):
             
     return ds
 
+
 def load_data(base_path, P):
     data = {}
     for phase in ['train', 'val']:
@@ -141,6 +151,7 @@ def load_data(base_path, P):
         data[phase]['images'] = np.load(os.path.join(base_path, 'formatted_{}_images.npy'.format(phase)))
         data[phase]['feats'] = np.load(P['{}_feats_file'.format(phase)]) if P['use_feats'] else []
     return data
+
 
 class multilabel:
 
@@ -207,6 +218,7 @@ class multilabel:
     
     def get_datasets(self):
         return {'train': self.train, 'val': self.val, 'test': self.test}
+
 
 class ds_multilabel(Dataset):
 
