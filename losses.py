@@ -24,7 +24,7 @@ def expected_positive_regularizer(preds, expected_num_pos, norm='2'):
 
 
 def entropy(f_cn, alpha=0.2):
-    return -alpha*(f_cn*torch.log(f_cn) + (1-f_cn) * torch.log(1 - f_cn))
+    return -alpha*(f_cn*torch.log(f_cn + LOG_EPSILON) + (1-f_cn) * torch.log(1 - f_cn + LOG_EPSILON))
     
 
 '''

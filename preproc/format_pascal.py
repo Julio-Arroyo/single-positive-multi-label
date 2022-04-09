@@ -3,8 +3,10 @@ import json
 import numpy as np
 import argparse
 
+
+pascal_path = '/home/julioarroyo/research_Eli_and_Julio/single-positive-multi-label-julio/data/pascal'
 pp = argparse.ArgumentParser(description='Format PASCAL 2012 metadata.')
-pp.add_argument('--load-path', type=str, default='../data/pascal', help='Path to a directory containing a copy of the PASCAL dataset.')
+pp.add_argument('--load-path', type=str, default=pascal_path, help='Path to a directory containing a copy of the PASCAL dataset.')
 pp.add_argument('--save-path', type=str, default='../data/pascal', help='Path to output directory.')
 args = pp.parse_args()
 

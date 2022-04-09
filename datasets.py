@@ -147,7 +147,8 @@ def load_data(base_path, P):
     for phase in ['train', 'val']:
         data[phase] = {}
         data[phase]['labels'] = np.load(os.path.join(base_path, 'formatted_{}_labels.npy'.format(phase)))
-        data[phase]['labels_obs'] = np.load(os.path.join(base_path, 'formatted_{}_labels_obs.npy'.format(phase)))
+        data[phase]['labels_obs'] = np.load(os.path.join(base_path, 'formatted_{}_location_1_labels_obs.npy'.format(phase)))
+        print('EM, LOCATION 1, LINEAR FIXED FEATURES')
         data[phase]['images'] = np.load(os.path.join(base_path, 'formatted_{}_images.npy'.format(phase)))
         data[phase]['feats'] = np.load(P['{}_feats_file'.format(phase)]) if P['use_feats'] else []
     return data
