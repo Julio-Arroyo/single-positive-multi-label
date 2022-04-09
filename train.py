@@ -258,9 +258,9 @@ if __name__ == '__main__':
     P = {}
     
     # Top-level parameters:
-    P['dataset'] = 'iNat21' # pascal, coco, nuswide, cub, iNat21
-    P['loss'] = 'an_ls' # bce, bce_ls, iun, iu, pr, an, an_ls, wan, epr, role
-    P['train_mode'] = 'linear_init' # linear_fixed_features, end_to_end, linear_init
+    P['dataset'] = 'pascal' # pascal, coco, nuswide, cub, iNat21
+    P['loss'] = 'em' # bce, bce_ls, iun, iu, pr, an, an_ls, wan, epr, role, em
+    P['train_mode'] = 'linear_fixed_features' # linear_fixed_features, end_to_end, linear_init
     P['val_set_variant'] = 'clean' # clean, observed
     
     # Paths and filenames:
@@ -269,8 +269,8 @@ if __name__ == '__main__':
     P['save_path'] = './results'
 
     # Optimization parameters:
-    P['linear_init_lr'] = lookup['linear_init_params'][P['loss']][P['dataset']]['linear_init_lr']
-    P['linear_init_bsize'] = lookup['linear_init_params'][P['loss']][P['dataset']]['linear_init_bsize']
+    # P['linear_init_lr'] = lookup['linear_init_params'][P['loss']][P['dataset']]['linear_init_lr']
+    # P['linear_init_bsize'] = lookup['linear_init_params'][P['loss']][P['dataset']]['linear_init_bsize']
     P['lr_mult'] = 10.0 # learning rate multiplier for the parameters of g
     P['stop_metric'] = 'map' # metric used to select the best epoch
     

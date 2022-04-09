@@ -11,8 +11,8 @@ def get_metadata(dataset_name):
     if dataset_name == 'pascal':
         meta = {
             'num_classes': 20,
-            'path_to_dataset': 'data/pascal',
-            'path_to_images': 'data/pascal/VOCdevkit/VOC2012/JPEGImages'
+            'path_to_dataset': '/home/julioarroyo/research_Eli_and_Julio/single-positive-multi-label-julio/data/pascal',
+            'path_to_images': '/home/julioarroyo/research_Eli_and_Julio/single-positive-multi-label-julio/data/pascal/VOCdevkit/VOC2012/JPEGImages'
         }
     elif dataset_name == 'coco':
         meta = {

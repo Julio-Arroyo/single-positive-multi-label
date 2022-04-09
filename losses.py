@@ -23,8 +23,8 @@ def expected_positive_regularizer(preds, expected_num_pos, norm='2'):
     return reg
 
 
-def entropy(alpha, f_cn):
-    return -(f_cn*torch.log(f_cn) + (1-f_cn) * torch.log(1 - f_cn))
+def entropy(f_cn, alpha=0.2):
+    return -alpha*(f_cn*torch.log(f_cn) + (1-f_cn) * torch.log(1 - f_cn))
     
 
 '''
@@ -192,7 +192,6 @@ def loss_role(batch, P, Z):
 
 def loss_em(batch, P, Z):
     """Entropy maximization loss from Zhou et al. (2022)"""
-    alpha = 1.0
     preds = batch['preds']
     observed_labels = batch['label_vec_obs']
 
@@ -202,7 +201,7 @@ def loss_em(batch, P, Z):
     # compute loss:
     loss_mtx = torch.zeros_like(observed_labels)
     loss_mtx[observed_labels == 1] = neg_log(preds[observed_labels == 1])
-    loss_mtx[observed_labels == 0] = entropy(alpha, preds[observed_labels == 0])
+    loss_mtx[observed_labels == 0] = entropy(preds[observed_labels == 0])
     reg_loss = None
     return loss_mtx, reg_loss
 
@@ -241,7 +240,7 @@ def compute_batch_loss(batch, P, Z):
     assert P['loss'] in loss_functions
     
     # validate predictions:
-    assert torch.max(batch['preds']) <= 1
+    assert torch.max(batch['preds']) <= 1, f"{batch['preds']}"
     assert torch.min(batch['preds']) >= 0
     
     # compute loss for each image and class:
