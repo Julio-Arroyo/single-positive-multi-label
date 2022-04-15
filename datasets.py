@@ -145,10 +145,15 @@ def get_data(P):
 def load_data(base_path, P):
     data = {}
     for phase in ['train', 'val']:
+        num = P['bias_number']
+        bias_type = 'uniform'
+        ds = P['dataset']
+        curr_loss = P['loss']
+
         data[phase] = {}
         data[phase]['labels'] = np.load(os.path.join(base_path, 'formatted_{}_labels.npy'.format(phase)))
-        data[phase]['labels_obs'] = np.load(os.path.join(base_path, 'formatted_{}_location_1_labels_obs.npy'.format(phase)))
-        print('EM, LOCATION 1, LINEAR FIXED FEATURES')
+        data[phase]['labels_obs'] = np.load(os.path.join(base_path, '{}_formatted_{}_{}_labels_obs.npy'.format(bias_type.upper(), num, phase)))
+        print(f'{ds} {curr_loss}, {bias_type} {num} , LINEAR FIXED FEATURES')
         data[phase]['images'] = np.load(os.path.join(base_path, 'formatted_{}_images.npy'.format(phase)))
         data[phase]['feats'] = np.load(P['{}_feats_file'.format(phase)]) if P['use_feats'] else []
     return data

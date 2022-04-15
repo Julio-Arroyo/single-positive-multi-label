@@ -9,6 +9,15 @@ import models
 from losses import compute_batch_loss
 import datetime
 from instrumentation import train_logger
+import argparse
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument("dataset")
+parser.add_argument("loss")
+parser.add_argument("experiment_run", help='A number between 1 and 5')
+args = parser.parse_args()
+
 
 def run_train_phase(model, P, Z, logger, epoch, phase):
     
@@ -258,8 +267,8 @@ if __name__ == '__main__':
     P = {}
     
     # Top-level parameters:
-    P['dataset'] = 'pascal' # pascal, coco, nuswide, cub, iNat21
-    P['loss'] = 'em' # bce, bce_ls, iun, iu, pr, an, an_ls, wan, epr, role, em
+    P['dataset'] = args.dataset # pascal, coco, nuswide, cub, iNat21
+    P['loss'] = args.loss # bce, bce_ls, iun, iu, pr, an, an_ls, wan, epr, role, em
     P['train_mode'] = 'linear_fixed_features' # linear_fixed_features, end_to_end, linear_init
     P['val_set_variant'] = 'clean' # clean, observed
     
@@ -289,6 +298,8 @@ if __name__ == '__main__':
     P['ss_seed'] = 999 # seed for subsampling
     P['ss_frac_train'] = 1.0 # fraction of training set to subsample
     P['ss_frac_val'] = 1.0 # fraction of val set to subsample
+
+    P['bias_number'] = args.experiment_run
     
     # Dependent parameters:
     if P['loss'] in ['bce', 'bce_ls']:
