@@ -2,6 +2,9 @@ import numpy as np
 import os
 import argparse
 
+
+# TODO: instead of having generate biased_labels, implement it here. add a bias argument to the parser
+# and move the sampling code here.
 pp = argparse.ArgumentParser(description='')
 pp.add_argument('--dataset', type=str, choices=['pascal', 'coco', 'nuswide', 'cub'], required=True)
 pp.add_argument('--num-pos', type=int, default=1, required=False, help='number of positive labels per image')
@@ -63,18 +66,24 @@ def observe_uniform(label_matrix, num_pos, num_neg, rng):
 
 base_path = os.path.join('../data/{}'.format(args.dataset))
 
-for phase in ['train', 'val']:
-    # load ground truth binary label matrix:
-    label_matrix = np.load(os.path.join(base_path, 'formatted_{}_labels.npy'.format(phase)))
-    assert np.max(label_matrix) == 1
-    assert np.min(label_matrix) == 0
+NUM_REALIZATIONS = 5
+for i in range(1, NUM_REALIZATIONS + 1):
+    for phase in ['train', 'val']:
+        # load ground truth binary label matrix:
+        label_matrix = np.load(os.path.join(base_path, 'formatted_{}_labels.npy'.format(phase)))
+        assert np.max(label_matrix) == 1
+        assert np.min(label_matrix) == 0
 
-    # convert label matrix to -1 / +1 format:
-    label_matrix[label_matrix == 0] = -1
+        # convert label matrix to -1 / +1 format:
+        label_matrix[label_matrix == 0] = -1
 
-    # choose observed labels, resulting in -1 / 0 / +1 format:
-    rng = np.random.RandomState(args.seed)
-    label_matrix_obs = observe_uniform(label_matrix, args.num_pos, args.num_neg, rng)
+        # choose observed labels, resulting in -1 / 0 / +1 format:
+        rng = np.random.RandomState(args.seed)
+        label_matrix_obs = observe_uniform(label_matrix, args.num_pos, args.num_neg, rng)
 
-    # save observed labels:
-    np.save(os.path.join(base_path, 'formatted_{}_labels_obs.npy'.format(phase)), label_matrix_obs)
+        # save observed labels:
+        file_name = '{}_formatted_{}_{}_{}_labels_obs.npy'.format(args.dataset,
+                                                                  phase,
+                                                                  'uniform',
+                                                                  i)
+        np.save(os.path.join(base_path, file_name), label_matrix_obs)
