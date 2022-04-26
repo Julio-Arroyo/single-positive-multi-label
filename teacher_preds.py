@@ -35,7 +35,7 @@ def configure_parameters():
     P = {}
     
     # Top-level parameters:
-    P['dataset'] = 'coco' # pascal, coco, nuswide, cub, iNat21
+    P['dataset'] = 'pascal' # pascal, coco, nuswide, cub, iNat21
     P['loss'] = 'em' # bce, bce_ls, iun, iu, pr, an, an_ls, wan, epr, role, em
     P['train_mode'] = 'end_to_end' # linear_fixed_features, end_to_end, linear_init
     P['val_set_variant'] = 'clean' # clean, observed
@@ -118,22 +118,28 @@ if __name__ == '__main__':
                                                 drop_last=False)
 
     # load model from weights
-    pth = '/media/julioarroyo/aspen/single-positive-multi-label/results/multi_label_experiment_2022_04_14_20-50-02_pascal/best_model_state_f.pt'
+    pth = './results/first-teacher-pascal_2022_04_25_01-34-24_pascal/best_model_state_f.pt'
     teacher_net = models.ImageClassifier(P)
     teacher_net.load_state_dict(torch.load(pth))
+    teacher_net.to(device)
 
     teacher_preds = np.zeros_like(ds['train'].label_matrix)
 
     # for each training image, get teacher's predictions
     teacher_net.eval()
+    img_count = 0
     for batch in imgs_to_label:
+        if img_count % 100 == 0:
+            print(f'Img #{img_count}')
+        img_count += 1
+
         # move data to GPU: 
         batch['image'] = batch['image'].to(device, non_blocking=True)
         batch['labels_np'] = batch['label_vec_obs'].clone().numpy() # copy of labels for use in metrics
         batch['label_vec_obs'] = batch['label_vec_obs'].to(device, non_blocking=True)
         # forward pass: 
         with torch.set_grad_enabled(False):
-            batch['logits'] = teacher_net.f(batch['image'])
+            batch['logits'] = teacher_net(batch['image'])
             batch['preds'] = torch.sigmoid(batch['logits'])
             if batch['preds'].dim() == 1:
                 batch['preds'] = torch.unsqueeze(batch['preds'], 0)
