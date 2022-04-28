@@ -1,8 +1,14 @@
 import numpy as np
+import argparse
+
+
+pp = argparse.ArgumentParser(description='')
+pp.add_argument('--threshold', type=float, required=True)
+args = pp.parse_args()
 
 
 if __name__ == '__main__':
-    threshold = 0.65
+    threshold = args.threshold
     print(f'Threshold: {threshold}')
     ds = 'pascal'
     teacher_preds = np.load(f'../data/{ds}/teacher_preds.npy')
