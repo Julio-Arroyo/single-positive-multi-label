@@ -1,0 +1,13 @@
+DEVICE: cuda:0
+pascal em, uniform 1 , end_to_end
+pascal em, uniform 1 , end_to_end
+Using single positive labels for training.
+Using clean labels for validation.
+initializing image classifier
+feature extractor: imagenet pretrained
+feature extractor trainable
+linear classifier layer: randomly initialized
+initializing label estimator
+observed positives: 4574 total, 1.0 per example on average
+observed negatives: 0 total, 0.0 per example on average
+Epoch 0/9

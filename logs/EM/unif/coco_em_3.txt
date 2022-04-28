@@ -1,0 +1,45 @@
+DEVICE: cuda:0
+coco em, uniform 3 , end_to_end
+coco em, uniform 3 , end_to_end
+Using single positive labels for training.
+Using clean labels for validation.
+initializing image classifier
+feature extractor: imagenet pretrained
+feature extractor trainable
+linear classifier layer: randomly initialized
+initializing label estimator
+observed positives: 65665 total, 1.0 per example on average
+observed negatives: 0 total, 0.0 per example on average
+Epoch 0/9
+[train] time: 74.39 min, loss: -0.129, map_clean: 3.78, map_observed: 1.29
+[val] time: 8.45 min, loss: -999.000, map_clean: 3.63, map_observed: 3.63
+*** new best weights ***
+[test] time: 19.38 min, loss: -999.000, map_clean: 3.62, map_observed: 3.62
+Epoch 1/9
+[train] time: 74.37 min, loss: -0.129, map_clean: 4.87, map_observed: 1.64
+[val] time: 8.70 min, loss: -999.000, map_clean: 6.18, map_observed: 6.18
+*** new best weights ***
+[test] time: 19.43 min, loss: -999.000, map_clean: 6.11, map_observed: 6.11
+Epoch 2/9
+[train] time: 72.31 min, loss: -0.129, map_clean: 5.48, map_observed: 1.84
+[val] time: 8.65 min, loss: -999.000, map_clean: 6.07, map_observed: 6.07
+[test] time: 19.11 min, loss: -999.000, map_clean: 6.00, map_observed: 6.00
+Epoch 3/9
+[train] time: 73.96 min, loss: -0.129, map_clean: 5.53, map_observed: 1.87
+[val] time: 8.49 min, loss: -999.000, map_clean: 6.34, map_observed: 6.34
+*** new best weights ***
+[test] time: 19.16 min, loss: -999.000, map_clean: 6.21, map_observed: 6.21
+Epoch 4/9
+[train] time: 72.95 min, loss: -0.129, map_clean: 5.58, map_observed: 1.89
+[val] time: 8.55 min, loss: -999.000, map_clean: 6.30, map_observed: 6.30
+[test] time: 19.52 min, loss: -999.000, map_clean: 6.23, map_observed: 6.23
+Epoch 5/9
+[train] time: 73.18 min, loss: -0.129, map_clean: 5.62, map_observed: 1.91
+[val] time: 8.57 min, loss: -999.000, map_clean: 6.34, map_observed: 6.34
+[test] time: 19.61 min, loss: -999.000, map_clean: 6.25, map_observed: 6.25
+Epoch 6/9
+[train] time: 71.88 min, loss: -0.129, map_clean: 5.67, map_observed: 1.90
+[val] time: 8.45 min, loss: -999.000, map_clean: 6.44, map_observed: 6.44
+*** new best weights ***
+[test] time: 19.90 min, loss: -999.000, map_clean: 6.37, map_observed: 6.37
+Epoch 7/9

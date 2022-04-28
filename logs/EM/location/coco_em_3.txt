@@ -1,0 +1,1097 @@
+coco em, location 3 , LINEAR FIXED FEATURES
+coco em, location 3 , LINEAR FIXED FEATURES
+Using single positive labels for training.
+Using clean labels for validation.
+initializing image classifier
+training a linear classifier only
+initializing label estimator
+observed positives: 65665 total, 1.0 per example on average
+observed negatives: 0 total, 0.0 per example on average
+Epoch 0/24
+[train] time: 1.20 min, loss: 0.014, map_clean: 3.91, map_observed: 1.46
+[val] time: 0.25 min, loss: -999.000, map_clean: 4.77, map_observed: 4.77
+*** new best weights ***
+[test] time: 0.60 min, loss: -999.000, map_clean: 4.77, map_observed: 4.77
+Epoch 1/24
+[train] time: 1.21 min, loss: 0.028, map_clean: 3.87, map_observed: 1.34
+[val] time: 0.25 min, loss: -999.000, map_clean: 3.84, map_observed: 3.84
+[test] time: 0.60 min, loss: -999.000, map_clean: 3.82, map_observed: 3.82
+Epoch 2/24
+[train] time: 1.23 min, loss: 0.034, map_clean: 3.87, map_observed: 1.33
+[val] time: 0.25 min, loss: -999.000, map_clean: 3.84, map_observed: 3.84
+[test] time: 0.61 min, loss: -999.000, map_clean: 3.82, map_observed: 3.82
+Epoch 3/24
+[train] time: 1.23 min, loss: 0.038, map_clean: 3.87, map_observed: 1.33
+[val] time: 0.25 min, loss: -999.000, map_clean: 3.86, map_observed: 3.86
+[test] time: 0.61 min, loss: -999.000, map_clean: 3.86, map_observed: 3.86
+Epoch 4/24
+[train] time: 1.23 min, loss: 0.042, map_clean: 3.90, map_observed: 1.34
+[val] time: 0.25 min, loss: -999.000, map_clean: 3.86, map_observed: 3.86
+[test] time: 0.61 min, loss: -999.000, map_clean: 3.86, map_observed: 3.86
+Epoch 5/24
+[train] time: 1.25 min, loss: 0.041, map_clean: 3.89, map_observed: 1.32
+[val] time: 0.25 min, loss: -999.000, map_clean: 3.85, map_observed: 3.85
+[test] time: 0.61 min, loss: -999.000, map_clean: 3.85, map_observed: 3.85
+Epoch 6/24
+[train] time: 1.32 min, loss: 0.041, map_clean: 3.89, map_observed: 1.32
+[val] time: 0.25 min, loss: -999.000, map_clean: 3.85, map_observed: 3.85
+[test] time: 0.61 min, loss: -999.000, map_clean: 3.85, map_observed: 3.85
+Epoch 7/24
+[train] time: 1.35 min, loss: 0.041, map_clean: 3.87, map_observed: 1.32
+[val] time: 0.25 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+[test] time: 0.62 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+Epoch 8/24
+[train] time: 1.52 min, loss: 0.041, map_clean: 3.84, map_observed: 1.31
+[val] time: 0.25 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+[test] time: 0.61 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+Epoch 9/24
+[train] time: 1.62 min, loss: 0.041, map_clean: 3.84, map_observed: 1.31
+[val] time: 0.25 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+[test] time: 0.61 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+Epoch 10/24
+[train] time: 1.61 min, loss: 0.041, map_clean: 3.84, map_observed: 1.31
+[val] time: 0.25 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+[test] time: 0.61 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+Epoch 11/24
+[train] time: 1.62 min, loss: 0.041, map_clean: 3.84, map_observed: 1.31
+[val] time: 0.25 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+[test] time: 0.61 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+Epoch 12/24
+[train] time: 1.63 min, loss: 0.041, map_clean: 3.84, map_observed: 1.31
+[val] time: 0.25 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+[test] time: 0.61 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+Epoch 13/24
+[train] time: 1.63 min, loss: 0.041, map_clean: 3.84, map_observed: 1.31
+[val] time: 0.25 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+[test] time: 0.61 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+Epoch 14/24
+[train] time: 1.63 min, loss: 0.041, map_clean: 3.84, map_observed: 1.31
+[val] time: 0.25 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+[test] time: 0.61 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+Epoch 15/24
+[train] time: 1.63 min, loss: 0.041, map_clean: 3.84, map_observed: 1.31
+[val] time: 0.25 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+[test] time: 0.61 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+Epoch 16/24
+[train] time: 1.64 min, loss: 0.041, map_clean: 3.84, map_observed: 1.31
+[val] time: 0.25 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+[test] time: 0.61 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+Epoch 17/24
+[train] time: 1.64 min, loss: 0.041, map_clean: 3.84, map_observed: 1.31
+[val] time: 0.25 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+[test] time: 0.62 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+Epoch 18/24
+[train] time: 1.65 min, loss: 0.041, map_clean: 3.84, map_observed: 1.31
+[val] time: 0.26 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+[test] time: 0.61 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+Epoch 19/24
+[train] time: 1.65 min, loss: 0.041, map_clean: 3.84, map_observed: 1.31
+[val] time: 0.25 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+[test] time: 0.61 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+Epoch 20/24
+[train] time: 1.64 min, loss: 0.041, map_clean: 3.84, map_observed: 1.31
+[val] time: 0.25 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+[test] time: 0.61 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+Epoch 21/24
+[train] time: 1.65 min, loss: 0.042, map_clean: 3.84, map_observed: 1.32
+[val] time: 0.25 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+[test] time: 0.61 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+Epoch 22/24
+[train] time: 1.65 min, loss: 0.042, map_clean: 3.84, map_observed: 1.31
+[val] time: 0.25 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+[test] time: 0.61 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+Epoch 23/24
+[train] time: 1.64 min, loss: 0.042, map_clean: 3.84, map_observed: 1.31
+[val] time: 0.25 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+[test] time: 0.62 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+Epoch 24/24
+[train] time: 1.65 min, loss: 0.042, map_clean: 3.84, map_observed: 1.31
+[val] time: 0.25 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+[test] time: 0.61 min, loss: -999.000, map_clean: 3.80, map_observed: 3.80
+
+*** TRAINING COMPLETE ***
+Best epoch: 0
+Best epoch validation score: 4.77
+Best epoch test score:       4.77
+
+Saving best weights for f to ./results/multi_label_experiment_2022_04_19_23-24-22_coco/best_model_state_f.pt
+
+Saving best weights for g to ./results/multi_label_experiment_2022_04_19_23-24-22_coco/best_model_state_g.pt
+
+Saving session data to ./results/multi_label_experiment_2022_04_19_23-24-22_coco/logs.json
+
+Saving session data to ./results/multi_label_experiment_2022_04_19_23-24-22_coco/params.json
+
+Reverting model to best weights.
+coco em, location 3 , LINEAR FIXED FEATURES
+coco em, location 3 , LINEAR FIXED FEATURES
+Using single positive labels for training.
+Using clean labels for validation.
+initializing image classifier
+training a linear classifier only
+initializing label estimator
+observed positives: 65665 total, 1.0 per example on average
+observed negatives: 0 total, 0.0 per example on average
+Epoch 0/24
+[train] time: 1.21 min, loss: -0.131, map_clean: 44.40, map_observed: 29.49
+[val] time: 0.26 min, loss: -999.000, map_clean: 58.19, map_observed: 58.19
+*** new best weights ***
+[test] time: 0.63 min, loss: -999.000, map_clean: 57.66, map_observed: 57.66
+Epoch 1/24
+[train] time: 1.21 min, loss: -0.131, map_clean: 48.59, map_observed: 33.14
+[val] time: 0.26 min, loss: -999.000, map_clean: 59.13, map_observed: 59.13
+*** new best weights ***
+[test] time: 0.63 min, loss: -999.000, map_clean: 58.37, map_observed: 58.37
+Epoch 2/24
+[train] time: 1.22 min, loss: -0.131, map_clean: 50.16, map_observed: 34.64
+[val] time: 0.26 min, loss: -999.000, map_clean: 59.88, map_observed: 59.88
+*** new best weights ***
+[test] time: 0.63 min, loss: -999.000, map_clean: 59.11, map_observed: 59.11
+Epoch 3/24
+[train] time: 1.21 min, loss: -0.131, map_clean: 50.84, map_observed: 35.33
+[val] time: 0.27 min, loss: -999.000, map_clean: 59.89, map_observed: 59.89
+*** new best weights ***
+[test] time: 0.63 min, loss: -999.000, map_clean: 59.16, map_observed: 59.16
+Epoch 4/24
+[train] time: 1.22 min, loss: -0.132, map_clean: 51.30, map_observed: 35.90
+[val] time: 0.26 min, loss: -999.000, map_clean: 60.15, map_observed: 60.15
+*** new best weights ***
+[test] time: 0.63 min, loss: -999.000, map_clean: 59.32, map_observed: 59.32
+Epoch 5/24
+[train] time: 1.22 min, loss: -0.132, map_clean: 51.85, map_observed: 36.40
+[val] time: 0.26 min, loss: -999.000, map_clean: 60.43, map_observed: 60.43
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 59.55, map_observed: 59.55
+Epoch 6/24
+[train] time: 1.23 min, loss: -0.132, map_clean: 51.82, map_observed: 36.76
+[val] time: 0.27 min, loss: -999.000, map_clean: 59.81, map_observed: 59.81
+[test] time: 0.63 min, loss: -999.000, map_clean: 59.05, map_observed: 59.05
+Epoch 7/24
+[train] time: 1.21 min, loss: -0.132, map_clean: 52.25, map_observed: 36.91
+[val] time: 0.27 min, loss: -999.000, map_clean: 60.52, map_observed: 60.52
+*** new best weights ***
+[test] time: 0.62 min, loss: -999.000, map_clean: 59.54, map_observed: 59.54
+Epoch 8/24
+[train] time: 1.22 min, loss: -0.132, map_clean: 52.24, map_observed: 37.12
+[val] time: 0.26 min, loss: -999.000, map_clean: 60.06, map_observed: 60.06
+[test] time: 0.63 min, loss: -999.000, map_clean: 59.40, map_observed: 59.40
+Epoch 9/24
+[train] time: 1.23 min, loss: -0.132, map_clean: 52.56, map_observed: 37.47
+[val] time: 0.26 min, loss: -999.000, map_clean: 60.56, map_observed: 60.56
+*** new best weights ***
+[test] time: 0.63 min, loss: -999.000, map_clean: 59.56, map_observed: 59.56
+Epoch 10/24
+[train] time: 1.22 min, loss: -0.132, map_clean: 52.50, map_observed: 37.41
+[val] time: 0.26 min, loss: -999.000, map_clean: 59.94, map_observed: 59.94
+[test] time: 0.64 min, loss: -999.000, map_clean: 59.22, map_observed: 59.22
+Epoch 11/24
+[train] time: 1.23 min, loss: -0.132, map_clean: 52.61, map_observed: 37.64
+[val] time: 0.26 min, loss: -999.000, map_clean: 60.50, map_observed: 60.50
+[test] time: 0.63 min, loss: -999.000, map_clean: 59.69, map_observed: 59.69
+Epoch 12/24
+[train] time: 1.23 min, loss: -0.132, map_clean: 52.64, map_observed: 37.79
+[val] time: 0.26 min, loss: -999.000, map_clean: 60.06, map_observed: 60.06
+[test] time: 0.63 min, loss: -999.000, map_clean: 59.28, map_observed: 59.28
+Epoch 13/24
+[train] time: 1.23 min, loss: -0.132, map_clean: 52.72, map_observed: 37.71
+[val] time: 0.26 min, loss: -999.000, map_clean: 60.43, map_observed: 60.43
+[test] time: 0.64 min, loss: -999.000, map_clean: 59.51, map_observed: 59.51
+Epoch 14/24
+[train] time: 1.23 min, loss: -0.132, map_clean: 52.77, map_observed: 37.87
+[val] time: 0.26 min, loss: -999.000, map_clean: 60.93, map_observed: 60.93
+*** new best weights ***
+[test] time: 0.63 min, loss: -999.000, map_clean: 60.12, map_observed: 60.12
+Epoch 15/24
+[train] time: 1.23 min, loss: -0.132, map_clean: 52.61, map_observed: 38.01
+[val] time: 0.26 min, loss: -999.000, map_clean: 60.50, map_observed: 60.50
+[test] time: 0.64 min, loss: -999.000, map_clean: 59.80, map_observed: 59.80
+Epoch 16/24
+[train] time: 1.22 min, loss: -0.132, map_clean: 52.80, map_observed: 37.99
+[val] time: 0.26 min, loss: -999.000, map_clean: 60.17, map_observed: 60.17
+[test] time: 0.63 min, loss: -999.000, map_clean: 59.10, map_observed: 59.10
+Epoch 17/24
+[train] time: 1.24 min, loss: -0.132, map_clean: 52.85, map_observed: 38.24
+[val] time: 0.26 min, loss: -999.000, map_clean: 60.39, map_observed: 60.39
+[test] time: 0.64 min, loss: -999.000, map_clean: 59.58, map_observed: 59.58
+Epoch 18/24
+[train] time: 1.22 min, loss: -0.132, map_clean: 52.80, map_observed: 38.13
+[val] time: 0.26 min, loss: -999.000, map_clean: 60.26, map_observed: 60.26
+[test] time: 0.64 min, loss: -999.000, map_clean: 59.53, map_observed: 59.53
+Epoch 19/24
+[train] time: 1.23 min, loss: -0.132, map_clean: 52.75, map_observed: 38.02
+[val] time: 0.26 min, loss: -999.000, map_clean: 60.50, map_observed: 60.50
+[test] time: 0.64 min, loss: -999.000, map_clean: 59.65, map_observed: 59.65
+Epoch 20/24
+[train] time: 1.23 min, loss: -0.132, map_clean: 52.80, map_observed: 38.29
+[val] time: 0.26 min, loss: -999.000, map_clean: 60.32, map_observed: 60.32
+[test] time: 0.63 min, loss: -999.000, map_clean: 59.40, map_observed: 59.40
+Epoch 21/24
+[train] time: 1.24 min, loss: -0.132, map_clean: 52.73, map_observed: 38.28
+[val] time: 0.26 min, loss: -999.000, map_clean: 60.30, map_observed: 60.30
+[test] time: 0.63 min, loss: -999.000, map_clean: 59.49, map_observed: 59.49
+Epoch 22/24
+[train] time: 1.24 min, loss: -0.132, map_clean: 52.81, map_observed: 38.24
+[val] time: 0.26 min, loss: -999.000, map_clean: 59.88, map_observed: 59.88
+[test] time: 0.64 min, loss: -999.000, map_clean: 59.04, map_observed: 59.04
+Epoch 23/24
+[train] time: 1.22 min, loss: -0.132, map_clean: 52.93, map_observed: 38.48
+[val] time: 0.26 min, loss: -999.000, map_clean: 60.37, map_observed: 60.37
+[test] time: 0.64 min, loss: -999.000, map_clean: 59.57, map_observed: 59.57
+Epoch 24/24
+[train] time: 1.22 min, loss: -0.132, map_clean: 52.79, map_observed: 38.40
+[val] time: 0.26 min, loss: -999.000, map_clean: 60.10, map_observed: 60.10
+[test] time: 0.64 min, loss: -999.000, map_clean: 59.23, map_observed: 59.23
+
+*** TRAINING COMPLETE ***
+Best epoch: 14
+Best epoch validation score: 60.93
+Best epoch test score:       60.12
+
+Saving best weights for f to ./results/multi_label_experiment_2022_04_20_00-24-19_coco/best_model_state_f.pt
+
+Saving best weights for g to ./results/multi_label_experiment_2022_04_20_00-24-19_coco/best_model_state_g.pt
+
+Saving session data to ./results/multi_label_experiment_2022_04_20_00-24-19_coco/logs.json
+
+Saving session data to ./results/multi_label_experiment_2022_04_20_00-24-19_coco/params.json
+
+Reverting model to best weights.
+coco em, location 3 , LINEAR FIXED FEATURES
+coco em, location 3 , LINEAR FIXED FEATURES
+Using single positive labels for training.
+Using clean labels for validation.
+initializing image classifier
+training a linear classifier only
+initializing label estimator
+observed positives: 65665 total, 1.0 per example on average
+observed negatives: 0 total, 0.0 per example on average
+Epoch 0/24
+[train] time: 1.23 min, loss: -0.132, map_clean: 50.15, map_observed: 30.59
+[val] time: 0.27 min, loss: -999.000, map_clean: 59.79, map_observed: 59.79
+*** new best weights ***
+[test] time: 0.63 min, loss: -999.000, map_clean: 59.16, map_observed: 59.16
+Epoch 1/24
+[train] time: 1.22 min, loss: -0.132, map_clean: 57.72, map_observed: 36.39
+[val] time: 0.26 min, loss: -999.000, map_clean: 60.93, map_observed: 60.93
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 60.28, map_observed: 60.28
+Epoch 2/24
+[train] time: 1.23 min, loss: -0.132, map_clean: 59.07, map_observed: 37.44
+[val] time: 0.26 min, loss: -999.000, map_clean: 61.81, map_observed: 61.81
+*** new best weights ***
+[test] time: 0.63 min, loss: -999.000, map_clean: 61.17, map_observed: 61.17
+Epoch 3/24
+[train] time: 1.25 min, loss: -0.133, map_clean: 59.86, map_observed: 38.14
+[val] time: 0.26 min, loss: -999.000, map_clean: 62.16, map_observed: 62.16
+*** new best weights ***
+[test] time: 0.63 min, loss: -999.000, map_clean: 61.53, map_observed: 61.53
+Epoch 4/24
+[train] time: 1.24 min, loss: -0.133, map_clean: 60.41, map_observed: 38.62
+[val] time: 0.26 min, loss: -999.000, map_clean: 62.72, map_observed: 62.72
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 62.15, map_observed: 62.15
+Epoch 5/24
+[train] time: 1.22 min, loss: -0.133, map_clean: 60.94, map_observed: 39.06
+[val] time: 0.26 min, loss: -999.000, map_clean: 62.98, map_observed: 62.98
+*** new best weights ***
+[test] time: 0.63 min, loss: -999.000, map_clean: 62.23, map_observed: 62.23
+Epoch 6/24
+[train] time: 1.23 min, loss: -0.133, map_clean: 61.28, map_observed: 39.40
+[val] time: 0.26 min, loss: -999.000, map_clean: 62.96, map_observed: 62.96
+[test] time: 0.64 min, loss: -999.000, map_clean: 62.32, map_observed: 62.32
+Epoch 7/24
+[train] time: 1.23 min, loss: -0.133, map_clean: 61.50, map_observed: 39.68
+[val] time: 0.26 min, loss: -999.000, map_clean: 63.17, map_observed: 63.17
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 62.53, map_observed: 62.53
+Epoch 8/24
+[train] time: 1.24 min, loss: -0.133, map_clean: 61.80, map_observed: 39.95
+[val] time: 0.26 min, loss: -999.000, map_clean: 63.52, map_observed: 63.52
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 62.86, map_observed: 62.86
+Epoch 9/24
+[train] time: 1.23 min, loss: -0.133, map_clean: 61.99, map_observed: 40.18
+[val] time: 0.26 min, loss: -999.000, map_clean: 63.53, map_observed: 63.53
+*** new best weights ***
+[test] time: 0.63 min, loss: -999.000, map_clean: 62.73, map_observed: 62.73
+Epoch 10/24
+[train] time: 1.23 min, loss: -0.133, map_clean: 62.20, map_observed: 40.42
+[val] time: 0.26 min, loss: -999.000, map_clean: 63.77, map_observed: 63.77
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 63.06, map_observed: 63.06
+Epoch 11/24
+[train] time: 1.24 min, loss: -0.133, map_clean: 62.36, map_observed: 40.65
+[val] time: 0.26 min, loss: -999.000, map_clean: 63.72, map_observed: 63.72
+[test] time: 0.64 min, loss: -999.000, map_clean: 63.01, map_observed: 63.01
+Epoch 12/24
+[train] time: 1.24 min, loss: -0.133, map_clean: 62.53, map_observed: 40.85
+[val] time: 0.26 min, loss: -999.000, map_clean: 63.77, map_observed: 63.77
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 63.10, map_observed: 63.10
+Epoch 13/24
+[train] time: 1.24 min, loss: -0.133, map_clean: 62.73, map_observed: 41.02
+[val] time: 0.27 min, loss: -999.000, map_clean: 63.71, map_observed: 63.71
+[test] time: 0.65 min, loss: -999.000, map_clean: 62.85, map_observed: 62.85
+Epoch 14/24
+[train] time: 1.23 min, loss: -0.133, map_clean: 62.81, map_observed: 41.21
+[val] time: 0.26 min, loss: -999.000, map_clean: 63.94, map_observed: 63.94
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 63.23, map_observed: 63.23
+Epoch 15/24
+[train] time: 1.24 min, loss: -0.133, map_clean: 62.91, map_observed: 41.29
+[val] time: 0.26 min, loss: -999.000, map_clean: 63.86, map_observed: 63.86
+[test] time: 0.64 min, loss: -999.000, map_clean: 63.17, map_observed: 63.17
+Epoch 16/24
+[train] time: 1.23 min, loss: -0.133, map_clean: 63.07, map_observed: 41.49
+[val] time: 0.26 min, loss: -999.000, map_clean: 64.11, map_observed: 64.11
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 63.39, map_observed: 63.39
+Epoch 17/24
+[train] time: 1.23 min, loss: -0.133, map_clean: 63.14, map_observed: 41.68
+[val] time: 0.26 min, loss: -999.000, map_clean: 63.95, map_observed: 63.95
+[test] time: 0.65 min, loss: -999.000, map_clean: 63.23, map_observed: 63.23
+Epoch 18/24
+[train] time: 1.23 min, loss: -0.133, map_clean: 63.25, map_observed: 41.83
+[val] time: 0.26 min, loss: -999.000, map_clean: 64.13, map_observed: 64.13
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 63.38, map_observed: 63.38
+Epoch 19/24
+[train] time: 1.24 min, loss: -0.133, map_clean: 63.34, map_observed: 42.00
+[val] time: 0.27 min, loss: -999.000, map_clean: 64.05, map_observed: 64.05
+[test] time: 0.64 min, loss: -999.000, map_clean: 63.34, map_observed: 63.34
+Epoch 20/24
+[train] time: 1.24 min, loss: -0.133, map_clean: 63.42, map_observed: 41.89
+[val] time: 0.26 min, loss: -999.000, map_clean: 64.20, map_observed: 64.20
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 63.43, map_observed: 63.43
+Epoch 21/24
+[train] time: 1.24 min, loss: -0.133, map_clean: 63.47, map_observed: 42.21
+[val] time: 0.26 min, loss: -999.000, map_clean: 64.30, map_observed: 64.30
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 63.63, map_observed: 63.63
+Epoch 22/24
+[train] time: 1.23 min, loss: -0.133, map_clean: 63.54, map_observed: 42.33
+[val] time: 0.27 min, loss: -999.000, map_clean: 64.15, map_observed: 64.15
+[test] time: 0.64 min, loss: -999.000, map_clean: 63.50, map_observed: 63.50
+Epoch 23/24
+[train] time: 1.23 min, loss: -0.133, map_clean: 63.57, map_observed: 42.37
+[val] time: 0.26 min, loss: -999.000, map_clean: 64.23, map_observed: 64.23
+[test] time: 0.64 min, loss: -999.000, map_clean: 63.45, map_observed: 63.45
+Epoch 24/24
+[train] time: 1.23 min, loss: -0.133, map_clean: 63.66, map_observed: 42.38
+[val] time: 0.26 min, loss: -999.000, map_clean: 64.22, map_observed: 64.22
+[test] time: 0.64 min, loss: -999.000, map_clean: 63.43, map_observed: 63.43
+
+*** TRAINING COMPLETE ***
+Best epoch: 21
+Best epoch validation score: 64.30
+Best epoch test score:       63.63
+
+Saving best weights for f to ./results/multi_label_experiment_2022_04_20_01-17-46_coco/best_model_state_f.pt
+
+Saving best weights for g to ./results/multi_label_experiment_2022_04_20_01-17-46_coco/best_model_state_g.pt
+
+Saving session data to ./results/multi_label_experiment_2022_04_20_01-17-46_coco/logs.json
+
+Saving session data to ./results/multi_label_experiment_2022_04_20_01-17-46_coco/params.json
+
+Reverting model to best weights.
+coco em, location 3 , LINEAR FIXED FEATURES
+coco em, location 3 , LINEAR FIXED FEATURES
+Using single positive labels for training.
+Using clean labels for validation.
+initializing image classifier
+training a linear classifier only
+initializing label estimator
+observed positives: 65665 total, 1.0 per example on average
+observed negatives: 0 total, 0.0 per example on average
+Epoch 0/24
+[train] time: 1.23 min, loss: -0.131, map_clean: 30.88, map_observed: 17.88
+[val] time: 0.26 min, loss: -999.000, map_clean: 47.48, map_observed: 47.48
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 47.25, map_observed: 47.25
+Epoch 1/24
+[train] time: 1.22 min, loss: -0.132, map_clean: 50.54, map_observed: 31.01
+[val] time: 0.27 min, loss: -999.000, map_clean: 53.94, map_observed: 53.94
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 53.43, map_observed: 53.43
+Epoch 2/24
+[train] time: 1.23 min, loss: -0.132, map_clean: 54.64, map_observed: 33.81
+[val] time: 0.27 min, loss: -999.000, map_clean: 56.26, map_observed: 56.26
+*** new best weights ***
+[test] time: 0.63 min, loss: -999.000, map_clean: 55.65, map_observed: 55.65
+Epoch 3/24
+[train] time: 1.25 min, loss: -0.132, map_clean: 56.50, map_observed: 35.10
+[val] time: 0.26 min, loss: -999.000, map_clean: 57.50, map_observed: 57.50
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 56.92, map_observed: 56.92
+Epoch 4/24
+[train] time: 1.24 min, loss: -0.132, map_clean: 57.58, map_observed: 35.82
+[val] time: 0.26 min, loss: -999.000, map_clean: 58.40, map_observed: 58.40
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 57.79, map_observed: 57.79
+Epoch 5/24
+[train] time: 1.23 min, loss: -0.132, map_clean: 58.32, map_observed: 36.41
+[val] time: 0.26 min, loss: -999.000, map_clean: 59.00, map_observed: 59.00
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 58.36, map_observed: 58.36
+Epoch 6/24
+[train] time: 1.24 min, loss: -0.132, map_clean: 58.98, map_observed: 36.82
+[val] time: 0.26 min, loss: -999.000, map_clean: 59.40, map_observed: 59.40
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 58.78, map_observed: 58.78
+Epoch 7/24
+[train] time: 1.24 min, loss: -0.132, map_clean: 59.37, map_observed: 37.17
+[val] time: 0.27 min, loss: -999.000, map_clean: 59.77, map_observed: 59.77
+*** new best weights ***
+[test] time: 0.63 min, loss: -999.000, map_clean: 59.15, map_observed: 59.15
+Epoch 8/24
+[train] time: 1.24 min, loss: -0.132, map_clean: 59.78, map_observed: 37.41
+[val] time: 0.26 min, loss: -999.000, map_clean: 60.06, map_observed: 60.06
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 59.42, map_observed: 59.42
+Epoch 9/24
+[train] time: 1.24 min, loss: -0.132, map_clean: 60.03, map_observed: 37.62
+[val] time: 0.26 min, loss: -999.000, map_clean: 60.33, map_observed: 60.33
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 59.70, map_observed: 59.70
+Epoch 10/24
+[train] time: 1.23 min, loss: -0.133, map_clean: 60.33, map_observed: 37.90
+[val] time: 0.26 min, loss: -999.000, map_clean: 60.51, map_observed: 60.51
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 59.92, map_observed: 59.92
+Epoch 11/24
+[train] time: 1.24 min, loss: -0.133, map_clean: 60.55, map_observed: 38.07
+[val] time: 0.26 min, loss: -999.000, map_clean: 60.75, map_observed: 60.75
+*** new best weights ***
+[test] time: 0.65 min, loss: -999.000, map_clean: 60.15, map_observed: 60.15
+Epoch 12/24
+[train] time: 1.24 min, loss: -0.133, map_clean: 60.75, map_observed: 38.28
+[val] time: 0.26 min, loss: -999.000, map_clean: 60.92, map_observed: 60.92
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 60.31, map_observed: 60.31
+Epoch 13/24
+[train] time: 1.23 min, loss: -0.133, map_clean: 60.96, map_observed: 38.41
+[val] time: 0.26 min, loss: -999.000, map_clean: 61.02, map_observed: 61.02
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 60.43, map_observed: 60.43
+Epoch 14/24
+[train] time: 1.24 min, loss: -0.133, map_clean: 61.10, map_observed: 38.54
+[val] time: 0.26 min, loss: -999.000, map_clean: 61.21, map_observed: 61.21
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 60.60, map_observed: 60.60
+Epoch 15/24
+[train] time: 1.23 min, loss: -0.133, map_clean: 61.31, map_observed: 38.77
+[val] time: 0.26 min, loss: -999.000, map_clean: 61.34, map_observed: 61.34
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 60.72, map_observed: 60.72
+Epoch 16/24
+[train] time: 1.24 min, loss: -0.133, map_clean: 61.43, map_observed: 38.80
+[val] time: 0.26 min, loss: -999.000, map_clean: 61.45, map_observed: 61.45
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 60.87, map_observed: 60.87
+Epoch 17/24
+[train] time: 1.23 min, loss: -0.133, map_clean: 61.60, map_observed: 38.95
+[val] time: 0.26 min, loss: -999.000, map_clean: 61.47, map_observed: 61.47
+*** new best weights ***
+[test] time: 0.65 min, loss: -999.000, map_clean: 60.87, map_observed: 60.87
+Epoch 18/24
+[train] time: 1.24 min, loss: -0.133, map_clean: 61.66, map_observed: 39.14
+[val] time: 0.26 min, loss: -999.000, map_clean: 61.62, map_observed: 61.62
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 61.03, map_observed: 61.03
+Epoch 19/24
+[train] time: 1.24 min, loss: -0.133, map_clean: 61.82, map_observed: 39.14
+[val] time: 0.26 min, loss: -999.000, map_clean: 61.68, map_observed: 61.68
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 61.11, map_observed: 61.11
+Epoch 20/24
+[train] time: 1.25 min, loss: -0.133, map_clean: 61.89, map_observed: 39.23
+[val] time: 0.26 min, loss: -999.000, map_clean: 61.80, map_observed: 61.80
+*** new best weights ***
+[test] time: 0.65 min, loss: -999.000, map_clean: 61.19, map_observed: 61.19
+Epoch 21/24
+[train] time: 1.23 min, loss: -0.133, map_clean: 62.02, map_observed: 39.40
+[val] time: 0.26 min, loss: -999.000, map_clean: 61.88, map_observed: 61.88
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 61.27, map_observed: 61.27
+Epoch 22/24
+[train] time: 1.24 min, loss: -0.133, map_clean: 62.11, map_observed: 39.52
+[val] time: 0.26 min, loss: -999.000, map_clean: 61.95, map_observed: 61.95
+*** new best weights ***
+[test] time: 0.65 min, loss: -999.000, map_clean: 61.34, map_observed: 61.34
+Epoch 23/24
+[train] time: 1.24 min, loss: -0.133, map_clean: 62.21, map_observed: 39.59
+[val] time: 0.26 min, loss: -999.000, map_clean: 62.01, map_observed: 62.01
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 61.38, map_observed: 61.38
+Epoch 24/24
+[train] time: 1.24 min, loss: -0.133, map_clean: 62.28, map_observed: 39.68
+[val] time: 0.26 min, loss: -999.000, map_clean: 62.10, map_observed: 62.10
+*** new best weights ***
+[test] time: 0.64 min, loss: -999.000, map_clean: 61.49, map_observed: 61.49
+
+*** TRAINING COMPLETE ***
+Best epoch: 24
+Best epoch validation score: 62.10
+Best epoch test score:       61.49
+
+Saving best weights for f to ./results/multi_label_experiment_2022_04_20_02-11-44_coco/best_model_state_f.pt
+
+Saving best weights for g to ./results/multi_label_experiment_2022_04_20_02-11-44_coco/best_model_state_g.pt
+
+Saving session data to ./results/multi_label_experiment_2022_04_20_02-11-44_coco/logs.json
+
+Saving session data to ./results/multi_label_experiment_2022_04_20_02-11-44_coco/params.json
+
+Reverting model to best weights.
+coco em, location 3 , LINEAR FIXED FEATURES
+coco em, location 3 , LINEAR FIXED FEATURES
+Using single positive labels for training.
+Using clean labels for validation.
+initializing image classifier
+training a linear classifier only
+initializing label estimator
+observed positives: 65665 total, 1.0 per example on average
+observed negatives: 0 total, 0.0 per example on average
+Epoch 0/24
+[train] time: 1.04 min, loss: -0.035, map_clean: 11.51, map_observed: 7.04
+[val] time: 0.24 min, loss: -999.000, map_clean: 20.20, map_observed: 20.20
+*** new best weights ***
+[test] time: 0.58 min, loss: -999.000, map_clean: 19.67, map_observed: 19.67
+Epoch 1/24
+[train] time: 1.05 min, loss: -0.028, map_clean: 12.74, map_observed: 8.04
+[val] time: 0.24 min, loss: -999.000, map_clean: 18.17, map_observed: 18.17
+[test] time: 0.57 min, loss: -999.000, map_clean: 17.68, map_observed: 17.68
+Epoch 2/24
+[train] time: 1.04 min, loss: -0.020, map_clean: 12.16, map_observed: 7.34
+[val] time: 0.24 min, loss: -999.000, map_clean: 16.64, map_observed: 16.64
+[test] time: 0.57 min, loss: -999.000, map_clean: 16.39, map_observed: 16.39
+Epoch 3/24
+[train] time: 1.04 min, loss: -0.015, map_clean: 11.31, map_observed: 6.86
+[val] time: 0.24 min, loss: -999.000, map_clean: 15.32, map_observed: 15.32
+[test] time: 0.57 min, loss: -999.000, map_clean: 15.01, map_observed: 15.01
+Epoch 4/24
+[train] time: 1.04 min, loss: -0.010, map_clean: 11.43, map_observed: 7.22
+[val] time: 0.24 min, loss: -999.000, map_clean: 14.71, map_observed: 14.71
+[test] time: 0.57 min, loss: -999.000, map_clean: 14.49, map_observed: 14.49
+Epoch 5/24
+[train] time: 1.04 min, loss: -0.006, map_clean: 10.76, map_observed: 6.52
+[val] time: 0.23 min, loss: -999.000, map_clean: 14.25, map_observed: 14.25
+[test] time: 0.57 min, loss: -999.000, map_clean: 13.97, map_observed: 13.97
+Epoch 6/24
+[train] time: 1.04 min, loss: -0.005, map_clean: 10.54, map_observed: 6.39
+[val] time: 0.24 min, loss: -999.000, map_clean: 13.04, map_observed: 13.04
+[test] time: 0.57 min, loss: -999.000, map_clean: 12.82, map_observed: 12.82
+Epoch 7/24
+[train] time: 1.04 min, loss: -0.004, map_clean: 10.76, map_observed: 6.54
+[val] time: 0.23 min, loss: -999.000, map_clean: 12.97, map_observed: 12.97
+[test] time: 0.57 min, loss: -999.000, map_clean: 12.65, map_observed: 12.65
+Epoch 8/24
+[train] time: 1.04 min, loss: -0.004, map_clean: 10.55, map_observed: 6.24
+[val] time: 0.24 min, loss: -999.000, map_clean: 14.15, map_observed: 14.15
+[test] time: 0.57 min, loss: -999.000, map_clean: 13.89, map_observed: 13.89
+Epoch 9/24
+[train] time: 1.05 min, loss: -0.001, map_clean: 9.87, map_observed: 6.03
+[val] time: 0.23 min, loss: -999.000, map_clean: 12.22, map_observed: 12.22
+[test] time: 0.57 min, loss: -999.000, map_clean: 12.04, map_observed: 12.04
+Epoch 10/24
+[train] time: 1.06 min, loss: 0.002, map_clean: 9.82, map_observed: 5.74
+[val] time: 0.23 min, loss: -999.000, map_clean: 11.68, map_observed: 11.68
+[test] time: 0.57 min, loss: -999.000, map_clean: 11.66, map_observed: 11.66
+Epoch 11/24
+[train] time: 1.07 min, loss: 0.005, map_clean: 9.50, map_observed: 5.70
+[val] time: 0.24 min, loss: -999.000, map_clean: 12.16, map_observed: 12.16
+[test] time: 0.56 min, loss: -999.000, map_clean: 11.94, map_observed: 11.94
+Epoch 12/24
+[train] time: 1.08 min, loss: 0.006, map_clean: 9.85, map_observed: 6.07
+[val] time: 0.23 min, loss: -999.000, map_clean: 12.42, map_observed: 12.42
+[test] time: 0.57 min, loss: -999.000, map_clean: 12.22, map_observed: 12.22
+Epoch 13/24
+[train] time: 1.07 min, loss: 0.007, map_clean: 9.27, map_observed: 5.79
+[val] time: 0.24 min, loss: -999.000, map_clean: 11.02, map_observed: 11.02
+[test] time: 0.57 min, loss: -999.000, map_clean: 10.80, map_observed: 10.80
+Epoch 14/24
+[train] time: 1.08 min, loss: 0.008, map_clean: 8.99, map_observed: 5.55
+[val] time: 0.23 min, loss: -999.000, map_clean: 11.92, map_observed: 11.92
+[test] time: 0.57 min, loss: -999.000, map_clean: 11.73, map_observed: 11.73
+Epoch 15/24
+[train] time: 1.13 min, loss: 0.011, map_clean: 9.43, map_observed: 5.60
+[val] time: 0.24 min, loss: -999.000, map_clean: 11.45, map_observed: 11.45
+[test] time: 0.57 min, loss: -999.000, map_clean: 11.21, map_observed: 11.21
+Epoch 16/24
+[train] time: 1.15 min, loss: 0.012, map_clean: 9.17, map_observed: 5.52
+[val] time: 0.23 min, loss: -999.000, map_clean: 11.61, map_observed: 11.61
+[test] time: 0.57 min, loss: -999.000, map_clean: 11.47, map_observed: 11.47
+Epoch 17/24
+[train] time: 1.16 min, loss: 0.012, map_clean: 9.68, map_observed: 5.85
+[val] time: 0.24 min, loss: -999.000, map_clean: 11.35, map_observed: 11.35
+[test] time: 0.57 min, loss: -999.000, map_clean: 11.18, map_observed: 11.18
+Epoch 18/24
+[train] time: 1.17 min, loss: 0.012, map_clean: 9.33, map_observed: 5.45
+[val] time: 0.23 min, loss: -999.000, map_clean: 11.31, map_observed: 11.31
+[test] time: 0.57 min, loss: -999.000, map_clean: 11.11, map_observed: 11.11
+Epoch 19/24
+[train] time: 1.19 min, loss: 0.012, map_clean: 8.37, map_observed: 4.62
+[val] time: 0.23 min, loss: -999.000, map_clean: 10.29, map_observed: 10.29
+[test] time: 0.58 min, loss: -999.000, map_clean: 10.11, map_observed: 10.11
+Epoch 20/24
+[train] time: 1.20 min, loss: 0.012, map_clean: 8.24, map_observed: 4.63
+[val] time: 0.23 min, loss: -999.000, map_clean: 10.58, map_observed: 10.58
+[test] time: 0.57 min, loss: -999.000, map_clean: 10.34, map_observed: 10.34
+Epoch 21/24
+[train] time: 1.19 min, loss: 0.013, map_clean: 8.67, map_observed: 5.29
+[val] time: 0.24 min, loss: -999.000, map_clean: 10.52, map_observed: 10.52
+[test] time: 0.57 min, loss: -999.000, map_clean: 10.34, map_observed: 10.34
+Epoch 22/24
+[train] time: 1.20 min, loss: 0.013, map_clean: 8.59, map_observed: 5.18
+[val] time: 0.23 min, loss: -999.000, map_clean: 10.46, map_observed: 10.46
+[test] time: 0.57 min, loss: -999.000, map_clean: 10.28, map_observed: 10.28
+Epoch 23/24
+[train] time: 1.22 min, loss: 0.014, map_clean: 7.91, map_observed: 5.12
+[val] time: 0.23 min, loss: -999.000, map_clean: 9.54, map_observed: 9.54
+[test] time: 0.57 min, loss: -999.000, map_clean: 9.38, map_observed: 9.38
+Epoch 24/24
+[train] time: 1.21 min, loss: 0.015, map_clean: 8.28, map_observed: 5.21
+[val] time: 0.24 min, loss: -999.000, map_clean: 9.48, map_observed: 9.48
+[test] time: 0.57 min, loss: -999.000, map_clean: 9.36, map_observed: 9.36
+
+*** TRAINING COMPLETE ***
+Best epoch: 0
+Best epoch validation score: 20.20
+Best epoch test score:       19.67
+
+Saving best weights for f to ./results/multi_label_experiment_2022_04_20_03-05-50_coco/best_model_state_f.pt
+
+Saving best weights for g to ./results/multi_label_experiment_2022_04_20_03-05-50_coco/best_model_state_g.pt
+
+Saving session data to ./results/multi_label_experiment_2022_04_20_03-05-50_coco/logs.json
+
+Saving session data to ./results/multi_label_experiment_2022_04_20_03-05-50_coco/params.json
+
+Reverting model to best weights.
+coco em, location 3 , LINEAR FIXED FEATURES
+coco em, location 3 , LINEAR FIXED FEATURES
+Using single positive labels for training.
+Using clean labels for validation.
+initializing image classifier
+training a linear classifier only
+initializing label estimator
+observed positives: 65665 total, 1.0 per example on average
+observed negatives: 0 total, 0.0 per example on average
+Epoch 0/24
+[train] time: 1.06 min, loss: -0.131, map_clean: 48.02, map_observed: 31.24
+[val] time: 0.24 min, loss: -999.000, map_clean: 59.49, map_observed: 59.49
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 58.65, map_observed: 58.65
+Epoch 1/24
+[train] time: 1.07 min, loss: -0.132, map_clean: 52.72, map_observed: 35.05
+[val] time: 0.24 min, loss: -999.000, map_clean: 60.51, map_observed: 60.51
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 59.76, map_observed: 59.76
+Epoch 2/24
+[train] time: 1.06 min, loss: -0.132, map_clean: 53.99, map_observed: 36.29
+[val] time: 0.25 min, loss: -999.000, map_clean: 61.47, map_observed: 61.47
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 60.67, map_observed: 60.67
+Epoch 3/24
+[train] time: 1.07 min, loss: -0.132, map_clean: 54.85, map_observed: 37.06
+[val] time: 0.24 min, loss: -999.000, map_clean: 61.55, map_observed: 61.55
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 60.74, map_observed: 60.74
+Epoch 4/24
+[train] time: 1.06 min, loss: -0.132, map_clean: 55.21, map_observed: 37.61
+[val] time: 0.24 min, loss: -999.000, map_clean: 61.94, map_observed: 61.94
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 61.22, map_observed: 61.22
+Epoch 5/24
+[train] time: 1.06 min, loss: -0.132, map_clean: 55.70, map_observed: 38.16
+[val] time: 0.24 min, loss: -999.000, map_clean: 61.52, map_observed: 61.52
+[test] time: 0.60 min, loss: -999.000, map_clean: 60.61, map_observed: 60.61
+Epoch 6/24
+[train] time: 1.07 min, loss: -0.132, map_clean: 56.07, map_observed: 38.53
+[val] time: 0.24 min, loss: -999.000, map_clean: 61.29, map_observed: 61.29
+[test] time: 0.59 min, loss: -999.000, map_clean: 60.59, map_observed: 60.59
+Epoch 7/24
+[train] time: 1.06 min, loss: -0.132, map_clean: 56.10, map_observed: 38.89
+[val] time: 0.24 min, loss: -999.000, map_clean: 61.35, map_observed: 61.35
+[test] time: 0.59 min, loss: -999.000, map_clean: 60.54, map_observed: 60.54
+Epoch 8/24
+[train] time: 1.07 min, loss: -0.132, map_clean: 56.51, map_observed: 39.15
+[val] time: 0.25 min, loss: -999.000, map_clean: 62.12, map_observed: 62.12
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 61.30, map_observed: 61.30
+Epoch 9/24
+[train] time: 1.06 min, loss: -0.132, map_clean: 56.44, map_observed: 39.29
+[val] time: 0.25 min, loss: -999.000, map_clean: 62.08, map_observed: 62.08
+[test] time: 0.59 min, loss: -999.000, map_clean: 61.22, map_observed: 61.22
+Epoch 10/24
+[train] time: 1.06 min, loss: -0.132, map_clean: 56.69, map_observed: 39.38
+[val] time: 0.24 min, loss: -999.000, map_clean: 61.66, map_observed: 61.66
+[test] time: 0.59 min, loss: -999.000, map_clean: 60.95, map_observed: 60.95
+Epoch 11/24
+[train] time: 1.05 min, loss: -0.132, map_clean: 56.68, map_observed: 39.68
+[val] time: 0.25 min, loss: -999.000, map_clean: 61.67, map_observed: 61.67
+[test] time: 0.60 min, loss: -999.000, map_clean: 60.84, map_observed: 60.84
+Epoch 12/24
+[train] time: 1.06 min, loss: -0.132, map_clean: 56.66, map_observed: 39.85
+[val] time: 0.24 min, loss: -999.000, map_clean: 62.05, map_observed: 62.05
+[test] time: 0.59 min, loss: -999.000, map_clean: 61.35, map_observed: 61.35
+Epoch 13/24
+[train] time: 1.06 min, loss: -0.132, map_clean: 56.89, map_observed: 39.84
+[val] time: 0.25 min, loss: -999.000, map_clean: 61.94, map_observed: 61.94
+[test] time: 0.60 min, loss: -999.000, map_clean: 61.07, map_observed: 61.07
+Epoch 14/24
+[train] time: 1.05 min, loss: -0.132, map_clean: 56.97, map_observed: 40.17
+[val] time: 0.25 min, loss: -999.000, map_clean: 61.83, map_observed: 61.83
+[test] time: 0.60 min, loss: -999.000, map_clean: 60.95, map_observed: 60.95
+Epoch 15/24
+[train] time: 1.06 min, loss: -0.132, map_clean: 57.09, map_observed: 40.19
+[val] time: 0.25 min, loss: -999.000, map_clean: 61.89, map_observed: 61.89
+[test] time: 0.60 min, loss: -999.000, map_clean: 61.26, map_observed: 61.26
+Epoch 16/24
+[train] time: 1.07 min, loss: -0.132, map_clean: 57.14, map_observed: 40.32
+[val] time: 0.24 min, loss: -999.000, map_clean: 61.90, map_observed: 61.90
+[test] time: 0.59 min, loss: -999.000, map_clean: 60.89, map_observed: 60.89
+Epoch 17/24
+[train] time: 1.07 min, loss: -0.132, map_clean: 57.25, map_observed: 40.30
+[val] time: 0.24 min, loss: -999.000, map_clean: 61.88, map_observed: 61.88
+[test] time: 0.59 min, loss: -999.000, map_clean: 60.97, map_observed: 60.97
+Epoch 18/24
+[train] time: 1.07 min, loss: -0.132, map_clean: 57.25, map_observed: 40.45
+[val] time: 0.24 min, loss: -999.000, map_clean: 61.09, map_observed: 61.09
+[test] time: 0.59 min, loss: -999.000, map_clean: 60.12, map_observed: 60.12
+Epoch 19/24
+[train] time: 1.07 min, loss: -0.132, map_clean: 57.22, map_observed: 40.51
+[val] time: 0.24 min, loss: -999.000, map_clean: 61.81, map_observed: 61.81
+[test] time: 0.60 min, loss: -999.000, map_clean: 61.13, map_observed: 61.13
+Epoch 20/24
+[train] time: 1.05 min, loss: -0.132, map_clean: 57.28, map_observed: 40.57
+[val] time: 0.24 min, loss: -999.000, map_clean: 61.88, map_observed: 61.88
+[test] time: 0.59 min, loss: -999.000, map_clean: 61.11, map_observed: 61.11
+Epoch 21/24
+[train] time: 1.06 min, loss: -0.132, map_clean: 57.13, map_observed: 40.56
+[val] time: 0.24 min, loss: -999.000, map_clean: 61.70, map_observed: 61.70
+[test] time: 0.59 min, loss: -999.000, map_clean: 60.93, map_observed: 60.93
+Epoch 22/24
+[train] time: 1.07 min, loss: -0.132, map_clean: 57.26, map_observed: 40.59
+[val] time: 0.24 min, loss: -999.000, map_clean: 61.75, map_observed: 61.75
+[test] time: 0.59 min, loss: -999.000, map_clean: 60.92, map_observed: 60.92
+Epoch 23/24
+[train] time: 1.06 min, loss: -0.132, map_clean: 57.27, map_observed: 40.78
+[val] time: 0.25 min, loss: -999.000, map_clean: 61.82, map_observed: 61.82
+[test] time: 0.59 min, loss: -999.000, map_clean: 61.04, map_observed: 61.04
+Epoch 24/24
+[train] time: 1.07 min, loss: -0.132, map_clean: 57.48, map_observed: 40.77
+[val] time: 0.24 min, loss: -999.000, map_clean: 61.15, map_observed: 61.15
+[test] time: 0.59 min, loss: -999.000, map_clean: 60.31, map_observed: 60.31
+
+*** TRAINING COMPLETE ***
+Best epoch: 8
+Best epoch validation score: 62.12
+Best epoch test score:       61.30
+
+Saving best weights for f to ./results/multi_label_experiment_2022_04_20_03-54-15_coco/best_model_state_f.pt
+
+Saving best weights for g to ./results/multi_label_experiment_2022_04_20_03-54-15_coco/best_model_state_g.pt
+
+Saving session data to ./results/multi_label_experiment_2022_04_20_03-54-15_coco/logs.json
+
+Saving session data to ./results/multi_label_experiment_2022_04_20_03-54-15_coco/params.json
+
+Reverting model to best weights.
+coco em, location 3 , LINEAR FIXED FEATURES
+coco em, location 3 , LINEAR FIXED FEATURES
+Using single positive labels for training.
+Using clean labels for validation.
+initializing image classifier
+training a linear classifier only
+initializing label estimator
+observed positives: 65665 total, 1.0 per example on average
+observed negatives: 0 total, 0.0 per example on average
+Epoch 0/24
+[train] time: 1.06 min, loss: -0.132, map_clean: 49.16, map_observed: 29.58
+[val] time: 0.25 min, loss: -999.000, map_clean: 58.62, map_observed: 58.62
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 58.02, map_observed: 58.02
+Epoch 1/24
+[train] time: 1.06 min, loss: -0.132, map_clean: 57.88, map_observed: 36.19
+[val] time: 0.24 min, loss: -999.000, map_clean: 60.66, map_observed: 60.66
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 59.99, map_observed: 59.99
+Epoch 2/24
+[train] time: 1.05 min, loss: -0.132, map_clean: 59.30, map_observed: 37.30
+[val] time: 0.24 min, loss: -999.000, map_clean: 61.57, map_observed: 61.57
+*** new best weights ***
+[test] time: 0.60 min, loss: -999.000, map_clean: 60.90, map_observed: 60.90
+Epoch 3/24
+[train] time: 1.07 min, loss: -0.133, map_clean: 60.13, map_observed: 38.05
+[val] time: 0.24 min, loss: -999.000, map_clean: 61.77, map_observed: 61.77
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 61.08, map_observed: 61.08
+Epoch 4/24
+[train] time: 1.06 min, loss: -0.133, map_clean: 60.74, map_observed: 38.52
+[val] time: 0.25 min, loss: -999.000, map_clean: 62.06, map_observed: 62.06
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 61.45, map_observed: 61.45
+Epoch 5/24
+[train] time: 1.05 min, loss: -0.133, map_clean: 61.16, map_observed: 38.94
+[val] time: 0.25 min, loss: -999.000, map_clean: 62.37, map_observed: 62.37
+*** new best weights ***
+[test] time: 0.58 min, loss: -999.000, map_clean: 61.67, map_observed: 61.67
+Epoch 6/24
+[train] time: 1.06 min, loss: -0.133, map_clean: 61.47, map_observed: 39.22
+[val] time: 0.24 min, loss: -999.000, map_clean: 62.83, map_observed: 62.83
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 62.14, map_observed: 62.14
+Epoch 7/24
+[train] time: 1.06 min, loss: -0.133, map_clean: 61.91, map_observed: 39.55
+[val] time: 0.24 min, loss: -999.000, map_clean: 62.96, map_observed: 62.96
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 62.47, map_observed: 62.47
+Epoch 8/24
+[train] time: 1.06 min, loss: -0.133, map_clean: 62.13, map_observed: 39.82
+[val] time: 0.24 min, loss: -999.000, map_clean: 63.07, map_observed: 63.07
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 62.42, map_observed: 62.42
+Epoch 9/24
+[train] time: 1.06 min, loss: -0.133, map_clean: 62.33, map_observed: 40.15
+[val] time: 0.24 min, loss: -999.000, map_clean: 63.10, map_observed: 63.10
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 62.53, map_observed: 62.53
+Epoch 10/24
+[train] time: 1.05 min, loss: -0.133, map_clean: 62.43, map_observed: 40.33
+[val] time: 0.24 min, loss: -999.000, map_clean: 63.44, map_observed: 63.44
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 62.75, map_observed: 62.75
+Epoch 11/24
+[train] time: 1.06 min, loss: -0.133, map_clean: 62.81, map_observed: 40.53
+[val] time: 0.24 min, loss: -999.000, map_clean: 63.35, map_observed: 63.35
+[test] time: 0.59 min, loss: -999.000, map_clean: 62.73, map_observed: 62.73
+Epoch 12/24
+[train] time: 1.06 min, loss: -0.133, map_clean: 62.86, map_observed: 40.69
+[val] time: 0.24 min, loss: -999.000, map_clean: 63.40, map_observed: 63.40
+[test] time: 0.59 min, loss: -999.000, map_clean: 62.84, map_observed: 62.84
+Epoch 13/24
+[train] time: 1.06 min, loss: -0.133, map_clean: 63.00, map_observed: 40.92
+[val] time: 0.25 min, loss: -999.000, map_clean: 63.52, map_observed: 63.52
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 62.88, map_observed: 62.88
+Epoch 14/24
+[train] time: 1.05 min, loss: -0.133, map_clean: 63.12, map_observed: 41.12
+[val] time: 0.24 min, loss: -999.000, map_clean: 63.81, map_observed: 63.81
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 63.11, map_observed: 63.11
+Epoch 15/24
+[train] time: 1.06 min, loss: -0.133, map_clean: 63.28, map_observed: 41.36
+[val] time: 0.25 min, loss: -999.000, map_clean: 63.67, map_observed: 63.67
+[test] time: 0.59 min, loss: -999.000, map_clean: 63.01, map_observed: 63.01
+Epoch 16/24
+[train] time: 1.06 min, loss: -0.133, map_clean: 63.42, map_observed: 41.34
+[val] time: 0.24 min, loss: -999.000, map_clean: 63.91, map_observed: 63.91
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 63.36, map_observed: 63.36
+Epoch 17/24
+[train] time: 1.07 min, loss: -0.133, map_clean: 63.54, map_observed: 41.62
+[val] time: 0.24 min, loss: -999.000, map_clean: 63.93, map_observed: 63.93
+*** new best weights ***
+[test] time: 0.60 min, loss: -999.000, map_clean: 63.22, map_observed: 63.22
+Epoch 18/24
+[train] time: 1.06 min, loss: -0.133, map_clean: 63.73, map_observed: 41.80
+[val] time: 0.24 min, loss: -999.000, map_clean: 63.82, map_observed: 63.82
+[test] time: 0.59 min, loss: -999.000, map_clean: 63.19, map_observed: 63.19
+Epoch 19/24
+[train] time: 1.06 min, loss: -0.133, map_clean: 63.79, map_observed: 41.92
+[val] time: 0.24 min, loss: -999.000, map_clean: 63.91, map_observed: 63.91
+[test] time: 0.59 min, loss: -999.000, map_clean: 63.22, map_observed: 63.22
+Epoch 20/24
+[train] time: 1.07 min, loss: -0.133, map_clean: 63.87, map_observed: 42.06
+[val] time: 0.25 min, loss: -999.000, map_clean: 63.87, map_observed: 63.87
+[test] time: 0.59 min, loss: -999.000, map_clean: 63.25, map_observed: 63.25
+Epoch 21/24
+[train] time: 1.06 min, loss: -0.133, map_clean: 63.89, map_observed: 42.00
+[val] time: 0.24 min, loss: -999.000, map_clean: 64.08, map_observed: 64.08
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 63.48, map_observed: 63.48
+Epoch 22/24
+[train] time: 1.06 min, loss: -0.133, map_clean: 63.99, map_observed: 42.19
+[val] time: 0.24 min, loss: -999.000, map_clean: 64.26, map_observed: 64.26
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 63.63, map_observed: 63.63
+Epoch 23/24
+[train] time: 1.06 min, loss: -0.133, map_clean: 64.13, map_observed: 42.42
+[val] time: 0.25 min, loss: -999.000, map_clean: 64.26, map_observed: 64.26
+*** new best weights ***
+[test] time: 0.60 min, loss: -999.000, map_clean: 63.65, map_observed: 63.65
+Epoch 24/24
+[train] time: 1.06 min, loss: -0.133, map_clean: 64.08, map_observed: 42.49
+[val] time: 0.24 min, loss: -999.000, map_clean: 64.25, map_observed: 64.25
+[test] time: 0.59 min, loss: -999.000, map_clean: 63.69, map_observed: 63.69
+
+*** TRAINING COMPLETE ***
+Best epoch: 23
+Best epoch validation score: 64.26
+Best epoch test score:       63.65
+
+Saving best weights for f to ./results/multi_label_experiment_2022_04_20_04-42-20_coco/best_model_state_f.pt
+
+Saving best weights for g to ./results/multi_label_experiment_2022_04_20_04-42-20_coco/best_model_state_g.pt
+
+Saving session data to ./results/multi_label_experiment_2022_04_20_04-42-20_coco/logs.json
+
+Saving session data to ./results/multi_label_experiment_2022_04_20_04-42-20_coco/params.json
+
+Reverting model to best weights.
+coco em, location 3 , LINEAR FIXED FEATURES
+coco em, location 3 , LINEAR FIXED FEATURES
+Using single positive labels for training.
+Using clean labels for validation.
+initializing image classifier
+training a linear classifier only
+initializing label estimator
+observed positives: 65665 total, 1.0 per example on average
+observed negatives: 0 total, 0.0 per example on average
+Epoch 0/24
+[train] time: 1.06 min, loss: -0.130, map_clean: 25.22, map_observed: 14.64
+[val] time: 0.25 min, loss: -999.000, map_clean: 42.44, map_observed: 42.44
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 42.03, map_observed: 42.03
+Epoch 1/24
+[train] time: 1.06 min, loss: -0.132, map_clean: 47.00, map_observed: 28.83
+[val] time: 0.24 min, loss: -999.000, map_clean: 51.01, map_observed: 51.01
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 50.61, map_observed: 50.61
+Epoch 2/24
+[train] time: 1.06 min, loss: -0.132, map_clean: 52.37, map_observed: 32.39
+[val] time: 0.24 min, loss: -999.000, map_clean: 54.08, map_observed: 54.08
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 53.64, map_observed: 53.64
+Epoch 3/24
+[train] time: 1.06 min, loss: -0.132, map_clean: 54.69, map_observed: 33.92
+[val] time: 0.24 min, loss: -999.000, map_clean: 55.77, map_observed: 55.77
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 55.30, map_observed: 55.30
+Epoch 4/24
+[train] time: 1.06 min, loss: -0.132, map_clean: 56.11, map_observed: 34.82
+[val] time: 0.25 min, loss: -999.000, map_clean: 56.81, map_observed: 56.81
+*** new best weights ***
+[test] time: 0.58 min, loss: -999.000, map_clean: 56.33, map_observed: 56.33
+Epoch 5/24
+[train] time: 1.05 min, loss: -0.132, map_clean: 57.00, map_observed: 35.54
+[val] time: 0.24 min, loss: -999.000, map_clean: 57.60, map_observed: 57.60
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 57.13, map_observed: 57.13
+Epoch 6/24
+[train] time: 1.06 min, loss: -0.132, map_clean: 57.75, map_observed: 36.02
+[val] time: 0.24 min, loss: -999.000, map_clean: 58.12, map_observed: 58.12
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 57.67, map_observed: 57.67
+Epoch 7/24
+[train] time: 1.06 min, loss: -0.132, map_clean: 58.30, map_observed: 36.38
+[val] time: 0.24 min, loss: -999.000, map_clean: 58.60, map_observed: 58.60
+*** new best weights ***
+[test] time: 0.60 min, loss: -999.000, map_clean: 58.11, map_observed: 58.11
+Epoch 8/24
+[train] time: 1.06 min, loss: -0.132, map_clean: 58.73, map_observed: 36.72
+[val] time: 0.24 min, loss: -999.000, map_clean: 58.96, map_observed: 58.96
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 58.48, map_observed: 58.48
+Epoch 9/24
+[train] time: 1.06 min, loss: -0.132, map_clean: 59.12, map_observed: 36.98
+[val] time: 0.25 min, loss: -999.000, map_clean: 59.27, map_observed: 59.27
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 58.78, map_observed: 58.78
+Epoch 10/24
+[train] time: 1.06 min, loss: -0.132, map_clean: 59.46, map_observed: 37.29
+[val] time: 0.25 min, loss: -999.000, map_clean: 59.52, map_observed: 59.52
+*** new best weights ***
+[test] time: 0.58 min, loss: -999.000, map_clean: 59.04, map_observed: 59.04
+Epoch 11/24
+[train] time: 1.06 min, loss: -0.132, map_clean: 59.74, map_observed: 37.43
+[val] time: 0.24 min, loss: -999.000, map_clean: 59.74, map_observed: 59.74
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 59.26, map_observed: 59.26
+Epoch 12/24
+[train] time: 1.07 min, loss: -0.132, map_clean: 60.00, map_observed: 37.69
+[val] time: 0.24 min, loss: -999.000, map_clean: 59.98, map_observed: 59.98
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 59.47, map_observed: 59.47
+Epoch 13/24
+[train] time: 1.05 min, loss: -0.132, map_clean: 60.18, map_observed: 37.82
+[val] time: 0.24 min, loss: -999.000, map_clean: 60.14, map_observed: 60.14
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 59.63, map_observed: 59.63
+Epoch 14/24
+[train] time: 1.07 min, loss: -0.133, map_clean: 60.37, map_observed: 38.05
+[val] time: 0.24 min, loss: -999.000, map_clean: 60.32, map_observed: 60.32
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 59.80, map_observed: 59.80
+Epoch 15/24
+[train] time: 1.05 min, loss: -0.133, map_clean: 60.55, map_observed: 38.16
+[val] time: 0.24 min, loss: -999.000, map_clean: 60.49, map_observed: 60.49
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 59.97, map_observed: 59.97
+Epoch 16/24
+[train] time: 1.05 min, loss: -0.133, map_clean: 60.73, map_observed: 38.32
+[val] time: 0.25 min, loss: -999.000, map_clean: 60.57, map_observed: 60.57
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 60.06, map_observed: 60.06
+Epoch 17/24
+[train] time: 1.06 min, loss: -0.133, map_clean: 60.87, map_observed: 38.48
+[val] time: 0.24 min, loss: -999.000, map_clean: 60.73, map_observed: 60.73
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 60.21, map_observed: 60.21
+Epoch 18/24
+[train] time: 1.06 min, loss: -0.133, map_clean: 61.04, map_observed: 38.62
+[val] time: 0.24 min, loss: -999.000, map_clean: 60.84, map_observed: 60.84
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 60.33, map_observed: 60.33
+Epoch 19/24
+[train] time: 1.06 min, loss: -0.133, map_clean: 61.14, map_observed: 38.65
+[val] time: 0.24 min, loss: -999.000, map_clean: 60.92, map_observed: 60.92
+*** new best weights ***
+[test] time: 0.60 min, loss: -999.000, map_clean: 60.41, map_observed: 60.41
+Epoch 20/24
+[train] time: 1.07 min, loss: -0.133, map_clean: 61.27, map_observed: 38.83
+[val] time: 0.24 min, loss: -999.000, map_clean: 60.99, map_observed: 60.99
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 60.47, map_observed: 60.47
+Epoch 21/24
+[train] time: 1.06 min, loss: -0.133, map_clean: 61.42, map_observed: 38.97
+[val] time: 0.24 min, loss: -999.000, map_clean: 61.08, map_observed: 61.08
+*** new best weights ***
+[test] time: 0.60 min, loss: -999.000, map_clean: 60.55, map_observed: 60.55
+Epoch 22/24
+[train] time: 1.06 min, loss: -0.133, map_clean: 61.46, map_observed: 39.09
+[val] time: 0.24 min, loss: -999.000, map_clean: 61.26, map_observed: 61.26
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 60.72, map_observed: 60.72
+Epoch 23/24
+[train] time: 1.06 min, loss: -0.133, map_clean: 61.60, map_observed: 39.10
+[val] time: 0.24 min, loss: -999.000, map_clean: 61.25, map_observed: 61.25
+[test] time: 0.59 min, loss: -999.000, map_clean: 60.72, map_observed: 60.72
+Epoch 24/24
+[train] time: 1.05 min, loss: -0.133, map_clean: 61.71, map_observed: 39.29
+[val] time: 0.24 min, loss: -999.000, map_clean: 61.36, map_observed: 61.36
+*** new best weights ***
+[test] time: 0.59 min, loss: -999.000, map_clean: 60.83, map_observed: 60.83
+
+*** TRAINING COMPLETE ***
+Best epoch: 24
+Best epoch validation score: 61.36
+Best epoch test score:       60.83
+
+Saving best weights for f to ./results/multi_label_experiment_2022_04_20_05-30-36_coco/best_model_state_f.pt
+
+Saving best weights for g to ./results/multi_label_experiment_2022_04_20_05-30-36_coco/best_model_state_g.pt
+
+Saving session data to ./results/multi_label_experiment_2022_04_20_05-30-36_coco/logs.json
+
+Saving session data to ./results/multi_label_experiment_2022_04_20_05-30-36_coco/params.json
+
+Reverting model to best weights.
+best run: ./results/multi_label_experiment_2022_04_20_01-17-46_coco
+- learning rate: 0.0001
+- batch size:    8
+- val score:     64.30052906518249
+- test score:    63.63072831673501
