@@ -91,6 +91,7 @@ def run_eval_phase(model, P, Z, logger, epoch, phase):
         # save current batch data:
         logger.update_phase_data(batch)
 
+
 def train(model, P, Z):
     
     '''
@@ -158,7 +159,9 @@ def initialize_training_run(P, feature_extractor, linear_classifier, estimated_l
     Z = {}
     
     # accelerator:
-    Z['device'] = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+    # Z['device'] = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+    Z['device'] = 'cpu'
+    print(f"DEVICE: {Z['device']}")
     
     # data:
     Z['datasets'] = datasets.get_data(P)
@@ -198,6 +201,7 @@ def initialize_training_run(P, feature_extractor, linear_classifier, estimated_l
     
     return P, Z, model
 
+
 def execute_training_run(P, feature_extractor, linear_classifier, estimated_labels=None):
     
     '''
@@ -234,6 +238,7 @@ def execute_training_run(P, feature_extractor, linear_classifier, estimated_labe
     model.g.load_state_dict(best_weights_g)
     
     return model.f.feature_extractor, model.f.linear_classifier, model.g.get_estimated_labels(), final_logs
+
 
 if __name__ == '__main__':
     
@@ -273,13 +278,15 @@ if __name__ == '__main__':
     P['val_set_variant'] = 'clean' # clean, observed
     
     # Paths and filenames:
-    P['experiment_name'] = 'multi_label_experiment'
+    # P['experiment_name'] = 'first-teacher-pascal'  # PSEUDO MULTI-LABELS
+    P['experiment_name'] = f"{P['dataset']}_{P['loss']}_{'uniform'}_{args.experiment_run}_{P['train_mode']}"  # BIAS
     P['load_path'] = './data'
     P['save_path'] = './results'
 
     # Optimization parameters:
-    # P['linear_init_lr'] = lookup['linear_init_params'][P['loss']][P['dataset']]['linear_init_lr']
-    # P['linear_init_bsize'] = lookup['linear_init_params'][P['loss']][P['dataset']]['linear_init_bsize']
+    if P['train_mode'] == 'linear_init':
+        P['linear_init_lr'] = lookup['linear_init_params'][P['loss']][P['dataset']]['linear_init_lr']
+        P['linear_init_bsize'] = lookup['linear_init_params'][P['loss']][P['dataset']]['linear_init_bsize']
     P['lr_mult'] = 10.0 # learning rate multiplier for the parameters of g
     P['stop_metric'] = 'map' # metric used to select the best epoch
     

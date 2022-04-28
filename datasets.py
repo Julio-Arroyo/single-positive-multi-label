@@ -11,14 +11,14 @@ def get_metadata(dataset_name):
     if dataset_name == 'pascal':
         meta = {
             'num_classes': 20,
-            'path_to_dataset': '/home/julioarroyo/research_Eli_and_Julio/single-positive-multi-label-julio/data/pascal',
-            'path_to_images': '/home/julioarroyo/research_Eli_and_Julio/single-positive-multi-label-julio/data/pascal/VOCdevkit/VOC2012/JPEGImages'
+            'path_to_dataset': '/media/julioarroyo/aspen/single-positive-multi-label/data/pascal',
+            'path_to_images': '/media/julioarroyo/aspen/Archive_SPML_julio/VOCdevkit/VOC2012/JPEGImages'
         }
     elif dataset_name == 'coco':
         meta = {
             'num_classes': 80,
             'path_to_dataset': 'data/coco',
-            'path_to_images': 'data/coco'
+            'path_to_images': '/media/julioarroyo/aspen/data_COCO/coco'
         }
     elif dataset_name == 'nuswide':
         meta = {
@@ -146,14 +146,25 @@ def load_data(base_path, P):
     data = {}
     for phase in ['train', 'val']:
         num = P['bias_number']
-        bias_type = 'uniform'
+        bias_type = 'location'
         ds = P['dataset']
         curr_loss = P['loss']
 
         data[phase] = {}
         data[phase]['labels'] = np.load(os.path.join(base_path, 'formatted_{}_labels.npy'.format(phase)))
-        data[phase]['labels_obs'] = np.load(os.path.join(base_path, '{}_formatted_{}_{}_labels_obs.npy'.format(bias_type.upper(), num, phase)))
-        print(f'{ds} {curr_loss}, {bias_type} {num} , LINEAR FIXED FEATURES')
+
+        # FOR PSEUDO MULTILABELS EXPERIMENTS
+        # data[phase]['labels_obs'] = np.load(os.path.join(base_path, 'teacher_labels_t75.npy'))
+        # print(f'Loss: {curr_loss}. DS: {ds}. Student-net, Threshold: 75%')
+
+        # data[phase]['labels_obs'] = np.load(os.path.join(base_path, '{}_formatted_{}_{}_labels_obs.npy'.format(bias_type.upper(), num, phase)))
+        
+        # FOR BIAS EXPERIMENTS
+        data[phase]['labels_obs'] = np.load(os.path.join(base_path, '{}_formatted_{}_{}_{}_labels_obs.npy'.format(ds, phase, bias_type, num)))
+        print(f"{ds} {curr_loss}, {bias_type} {num} , {P['train_mode']}")
+
+        # data[phase]['labels_obs'] = np.load(os.path.join(base_path, 'formatted_train_labels_obs.npy'))
+        
         data[phase]['images'] = np.load(os.path.join(base_path, 'formatted_{}_images.npy'.format(phase)))
         data[phase]['feats'] = np.load(P['{}_feats_file'.format(phase)]) if P['use_feats'] else []
     return data
@@ -191,6 +202,7 @@ class multilabel:
             P['dataset'],
             source_data['train']['images'][split_idx['train']],
             source_data['train']['labels'][split_idx['train'], :],
+            # source_data['train']['labels_obs'][:, :],  # when pseudo-label student training, obs_labels are teacher labels, which are already only the training set
             source_data['train']['labels_obs'][split_idx['train'], :],
             source_data['train']['feats'][split_idx['train'], :] if P['use_feats'] else [],
             tx['train'],
@@ -202,6 +214,7 @@ class multilabel:
             P['dataset'],
             source_data['train']['images'][split_idx['val']],
             source_data['train']['labels'][split_idx['val'], :],
+            # np.zeros((1143, 20)),  # FOR PSEUDO MULTILABELS: ugly workaround, this will be overwritten since using clean labels for validation
             source_data['train']['labels_obs'][split_idx['val'], :],
             source_data['train']['feats'][split_idx['val'], :] if P['use_feats'] else [],
             tx['val'],
