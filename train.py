@@ -10,13 +10,17 @@ from losses import compute_batch_loss
 import datetime
 from instrumentation import train_logger
 import argparse
+import random
 
 
 parser = argparse.ArgumentParser()
 parser.add_argument("dataset")
 parser.add_argument("loss")
+parser.add_argument("bias_type")
 parser.add_argument("experiment_run", help='A number between 1 and 5')
 args = parser.parse_args()
+
+FULLY_LABELED_TEACHER = False  # flag for when experimenting on Pseudo Multi-Labels in setting where teacher network is trained on fully-labeled subset
 
 
 def run_train_phase(model, P, Z, logger, epoch, phase):
@@ -159,8 +163,7 @@ def initialize_training_run(P, feature_extractor, linear_classifier, estimated_l
     Z = {}
     
     # accelerator:
-    # Z['device'] = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
-    Z['device'] = 'cpu'
+    Z['device'] = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
     print(f"DEVICE: {Z['device']}")
     
     # data:
@@ -175,8 +178,16 @@ def initialize_training_run(P, feature_extractor, linear_classifier, estimated_l
     # dataloaders:
     Z['dataloaders'] = {}
     for phase in ['train', 'val', 'test']:
+        ds = Z['datasets'][phase]
+        if FULLY_LABELED_TEACHER:
+            if phase == 'train':  # sets up fully-labeled subset of images
+                print(f'ORIGINAL NUMBER OF TRAINING IMAGES: {len(ds)}')
+                size_subset = int(len(ds) / 2.9)  # budget is N labels (1 per image). 2.9 is avg num of labels per img in COCO
+                indices = random.sample(range(len(ds)), k=size_subset)
+                ds = torch.utils.data.Subset(ds, indices)
+                print(f'NUMBER OF TRAINING IMAGES FOR TEACHER: {len(ds)}')
         Z['dataloaders'][phase] = torch.utils.data.DataLoader(
-            Z['datasets'][phase],
+            ds,
             batch_size = P['bsize'],
             shuffle = phase == 'train',
             sampler = None,
@@ -278,8 +289,8 @@ if __name__ == '__main__':
     P['val_set_variant'] = 'clean' # clean, observed
     
     # Paths and filenames:
-    # P['experiment_name'] = 'first-teacher-pascal'  # PSEUDO MULTI-LABELS
-    P['experiment_name'] = f"{P['dataset']}_{P['loss']}_{'uniform'}_{args.experiment_run}_{P['train_mode']}"  # BIAS
+    # P['experiment_name'] = 'first-fully-labeled-teacher-coco'  # PSEUDO MULTI-LABELS
+    P['experiment_name'] = f"{P['dataset']}_{P['loss']}_{'uniform'}_{args.experiment_run}_{P['train_mode']}"  # BIAS EXPERIMENTS
     P['load_path'] = './data'
     P['save_path'] = './results'
 
@@ -306,6 +317,8 @@ if __name__ == '__main__':
     P['ss_frac_train'] = 1.0 # fraction of training set to subsample
     P['ss_frac_val'] = 1.0 # fraction of val set to subsample
 
+    # BIAS EXPERIMENTS
+    P['bias_type'] = args.bias_type
     P['bias_number'] = args.experiment_run
     
     # Dependent parameters:
