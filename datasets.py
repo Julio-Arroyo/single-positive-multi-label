@@ -146,7 +146,7 @@ def load_data(base_path, P):
     data = {}
     for phase in ['train', 'val']:
         num = P['bias_number']
-        bias_type = 'location'
+        bias_type = P['bias_type']
         ds = P['dataset']
         curr_loss = P['loss']
 
@@ -156,12 +156,14 @@ def load_data(base_path, P):
         # FOR PSEUDO MULTILABELS EXPERIMENTS
         # data[phase]['labels_obs'] = np.load(os.path.join(base_path, 'teacher_labels_t75.npy'))
         # print(f'Loss: {curr_loss}. DS: {ds}. Student-net, Threshold: 75%')
+        # FULLY-LABELED-SUBSET for teacher
+        data[phase]['labels_obs'] = np.load(os.path.join(base_path, 'OG_formatted_{}_labels_obs.npy'.format(phase)))
 
         # data[phase]['labels_obs'] = np.load(os.path.join(base_path, '{}_formatted_{}_{}_labels_obs.npy'.format(bias_type.upper(), num, phase)))
         
-        # FOR BIAS EXPERIMENTS
-        data[phase]['labels_obs'] = np.load(os.path.join(base_path, '{}_formatted_{}_{}_{}_labels_obs.npy'.format(ds, phase, bias_type, num)))
-        print(f"{ds} {curr_loss}, {bias_type} {num} , {P['train_mode']}")
+        # # FOR BIAS EXPERIMENTS
+        # data[phase]['labels_obs'] = np.load(os.path.join(base_path, '{}_formatted_{}_{}_{}_labels_obs.npy'.format(ds, phase, bias_type, num)))
+        # print(f"{ds} {curr_loss}, {bias_type} {num} , {P['train_mode']}")
 
         # data[phase]['labels_obs'] = np.load(os.path.join(base_path, 'formatted_train_labels_obs.npy'))
         
