@@ -5,12 +5,19 @@ import math
 import random
 import numpy as np
 from format_coco import parse_categories
-# from distributions import cat_name_to_weights, cat_id_to_cat_name
+import argparse
+#  from distributions import cat_name_to_weights, cat_id_to_cat_name
 
 
-data_path = '/media/julioarroyo/aspen/data'
+parser = argparse.ArgumentParser()
+parser.add_argument("bias_type", type=str)
+args = parser.parse_args()
+
+
+data_path = '/media/julioarroyo/new_aspen/data'
 coco_path = '/coco/annotations/'
 labels_path = '/home/julioarroyo/research_Eli_and_Julio/single-positive-multi-label-julio/data/coco'
+
 
 f_train = open(data_path + coco_path + 'instances_train2014.json')
 # f_val = open(data_path + coco_path + 'instances_val2014.json')
@@ -183,7 +190,7 @@ def make_biased_matrix_emp(weights, bias_type):
 if __name__ == '__main__':
     imID_to_anns = get_anns_by_imID()
     # (category_list, cat_id_to_index, cat_name_to_cat_id) = parse_categories(files['train']['categories'])
-    bias_type = 'location'  # 'size', 'empirical', or 'location'
+    bias_type = args.bias_type  # 'size', 'empirical', or 'location'
     if bias_type == 'size' or bias_type == 'location':
         (category_list, cat_id_to_index, cat_name_to_cat_id) = parse_categories(files['train']['categories'])
         print('entering biased_matrix call')
